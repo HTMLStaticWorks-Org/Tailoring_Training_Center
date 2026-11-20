@@ -1,513 +1,763 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us | ChemDist Pro Industrial Cleaning Chemical Distributor</title>
-  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <title>About Our Institute | Velora — Hands-On Sewing &amp; Garment Academy</title>
   <meta name="description"
-    content="Learn about ChemDist Pro: Premier B2B distributor of heavy-duty industrial cleaning chemicals, EPA disinfectants, technical solvents, and HazMat logistics since 2008.">
+    content="Discover the story, vision, mission, practical teaching approach, and experienced women trainers behind Velora.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
 
-  <!-- Phosphor Icons -->
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
-
-  <!-- Styles -->
+  <!-- Google Fonts: Playfair Display & DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
 
-  <!-- SEO JSON-LD -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "name": "About ChemDist Pro",
-    "description": "Industrial Cleaning Chemical & Supply Distributor",
-    "url": "https://www.chemdistpro.com/about.html"
-  }
-  </script>
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
+  <!-- Decorative Top Running Stitch Bar -->
+  <div class="animated-stitch-bar" aria-hidden="true"></div>
 
-  <!-- Header -->
-  <header class="header">
+  <!-- ==================== CONSISTENT PREMIUM HEADER ==================== -->
+  <header class="site-header" id="topHeader">
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-        <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
-      </a>
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo" aria-label="Velora Home">
+          <span class="brand-emblem" aria-hidden="true">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
 
-      <nav class="nav-desktop">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="home2.html" class="nav-link">Home2</a>
-        <a href="about.html" class="nav-link active">About</a>
-        <a href="services.html" class="nav-link">Catalog</a>
-        <a href="doctors.html" class="nav-link">Ordering</a>
-        <a href="blog.html" class="nav-link">SDS</a>
-        <a href="contact.html" class="nav-link">Contact</a>
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
-      </nav>
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-item-link">Home</a>
+          <a href="home2.html" class="nav-item-link">Home 2</a>
+          <a href="about.html" class="nav-item-link active" aria-current="page">About</a>
+          <a href="courses.html" class="nav-item-link">Courses</a>
+          <a href="batch-timings.html" class="nav-item-link">Batch Timings</a>
+          <a href="gallery.html" class="nav-item-link">Gallery</a>
+          <a href="contact.html" class="nav-item-link">Contact</a>
+        </nav>
 
-      <div class="nav-actions">
-        <button class="icon-btn theme-toggle theme-toggle-desktop" aria-label="Toggle Dark Mode">
-          <i class="ph ph-moon"></i>
-        </button>
-        <button class="icon-btn rtl-toggle rtl-toggle-desktop" aria-label="Toggle RTL" title="Toggle RTL">
-          <i class="ph ph-arrows-left-right"></i>
-        </button>
-
-        <a href="login.html" class="btn btn-primary btn-sm nav-desktop">Login</a>
-
-        <button class="icon-btn hamburger" aria-label="Open Menu">
-          <i class="ph ph-list"></i>
-        </button>
+        <div class="header-cta-group">
+          <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout"
+            title="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+            <span class="utility-btn-label">RTL</span>
+          </button>
+          <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme"
+            title="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <a href="contact.html#enrollment-form" class="btn-ttc-primary btn-sm-ttc header-cta-desktop">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll Now</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+            aria-controls="mobileNavDrawer">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Overlay -->
-  <div class="mobile-drawer-overlay"></div>
-
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer">
-    <div class="drawer-header">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-        <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
-      </a>
-      <button class="icon-btn drawer-close" aria-label="Close Menu">
-        <i class="ph ph-x"></i>
-      </button>
-    </div>
-
-    <nav class="drawer-nav">
-      <a href="index.html" class="drawer-nav-link">Home</a>
-      <a href="home2.html" class="drawer-nav-link">Home2</a>
-      <a href="about.html" class="drawer-nav-link active">About</a>
-      <a href="services.html" class="drawer-nav-link">Catalog</a>
-      <a href="doctors.html" class="drawer-nav-link">Ordering</a>
-      <a href="blog.html" class="drawer-nav-link">SDS</a>
-      <a href="contact.html" class="drawer-nav-link">Contact</a>
-      <a href="dashboard.html" class="drawer-nav-link">Dashboard</a>
-    </nav>
-
-    <div class="drawer-actions">
-      <div class="drawer-toggles">
-        <button class="icon-btn theme-toggle" aria-label="Toggle Dark Mode">
-          <i class="ph ph-moon"></i>
-        </button>
-        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL" title="Toggle RTL">
-          <i class="ph ph-arrows-left-right"></i>
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-emblem">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close Navigation Menu">
+          <i class="bi bi-x-lg"></i>
         </button>
       </div>
-      <a href="login.html" class="btn btn-primary btn-block">Login</a>
+
+      <ul class="mobile-drawer-links">
+        <li><a href="index.html" class="mobile-drawer-link"><span>Home</span><i class="bi bi-chevron-right"></i></a>
+        </li>
+        <li><a href="home2.html" class="mobile-drawer-link"><span>Home 2 (Atelier View)</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html" class="mobile-drawer-link active"><span>About Our Institute</span><i
+              class="bi bi-chevron-right"></i></a></li>
+        <li><a href="courses.html" class="mobile-drawer-link"><span>Training Courses</span><i
+              class="bi bi-chevron-right"></i></a></li>
+        <li><a href="batch-timings.html" class="mobile-drawer-link"><span>Batch Timings</span><i
+              class="bi bi-chevron-right"></i></a></li>
+        <li><a href="gallery.html" class="mobile-drawer-link"><span>Student Works Gallery</span><i
+              class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html" class="mobile-drawer-link"><span>Contact &amp; Enrollment</span><i
+              class="bi bi-chevron-right"></i></a></li>
+      </ul>
     </div>
-  </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="drawer-utility-bar">
+        <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout">
+          <i class="bi bi-arrow-left-right"></i>
+          <span class="utility-btn-label">RTL</span>
+        </button>
+        <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme">
+          <i class="bi bi-moon-stars"></i>
+          <span class="utility-btn-label">Theme</span>
+        </button>
+      </div>
+      <p class="small mb-3">Ready to begin your hands-on stitching and garment design journey?</p>
+      <a href="contact.html#enrollment-form" class="btn-ttc-primary w-100">
+        <i class="bi bi-journal-check"></i>
+        <span>Enroll Now</span>
+      </a>
+    </div>
+  </aside>
 
   <main>
-    <!-- Page Hero -->
-    <section class="hero" style="padding-bottom: var(--spacing-8);">
-      <div class="mesh mesh-1"></div>
-      <div class="mesh mesh-2"></div>
-      <div class="grid-overlay"></div>
+    <!-- ==================== 1. ABOUT OUR INSTITUTE HERO ==================== -->
+    <section class="page-hero hero-dark">
+      <img class="page-hero-bg"
+        src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1400&q=85"
+        alt="Tailoring academy studio interior with garment racks and fabric swatches">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
 
       <div class="container">
-        <div class="section-header" style="margin-bottom: 0;">
-          <span class="eyebrow centered">About ChemDist Pro</span>
-          <h1> Chemical <span class="serif grad-text">Distribution</span></h1>
-          <p class="lead">Pioneering chemical purity, strict HazMat compliance, and reliable facility delivery since 2008.</p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats Banner -->
-    <div class="bg-alt" style="border-block: 1px solid var(--color-border); padding: var(--spacing-5) 0;">
-      <div class="container">
-        <div class="stat-strip" style="margin: 0;">
-          <div class="stat">
-            <span class="stat-value" data-count="18" data-suffix="+">0</span>
-            <span class="stat-label">Years of Industry Leadership</span>
+        <div class="page-hero-content reveal-up">
+          <div class="eyebrow-badge eyebrow-badge-light">
+            <i class="bi bi-scissors"></i>
+            <span>About Our Institute</span>
           </div>
-          <div class="stat">
-            <span class="stat-value" data-count="1500" data-suffix="+">0</span>
-            <span class="stat-label">Commercial B2B Accounts</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value" data-count="99" data-suffix=".4%">0</span>
-            <span class="stat-label">On-Time Dock Deliveries</span>
-          </div>
-          <div class="stat">
-            <span class="stat-value" data-count="500" data-suffix="+">0</span>
-            <span class="stat-label">Active Chemical Formulations</span>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- ==================== OUR HERITAGE & STORY ==================== -->
-    <section id="heritage">
-      <div class="container split">
-        <div class="split-media" data-reveal="left" style="position: relative;">
-          <div class="media-frame" style="aspect-ratio: 4 / 3; border-radius: var(--radius-lg); overflow: hidden;">
-            <img src="https://lracking.com/wp-content/uploads/2024/05/Stackable-Oil-Drum-Racks.jpeg"
-              alt="ChemDist Pro Chemical Storage Warehouse with Blue Drums and Totes" loading="lazy">
-          </div>
-          <div class="float-chip" style="right: -20px; bottom: 24px;">
-            <div class="fc-icon"><i class="ph ph-drop"></i></div>
-            <div style="text-align: left;">
-              <strong>Zero-Contamination Filling</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="split-copy" data-reveal="right" style="align-items: flex-start; text-align: left;">
-          <span class="eyebrow" style="margin-bottom: var(--spacing-2);"><i class="ph ph-flag"></i> Our Story</span>
-          <h2 style="margin-bottom: var(--spacing-3); font-size: clamp(2rem, 3.2vw, 2.75rem);">
-            Built from the ground up for <span class="serif grad-text">mission-critical facilities</span>
-          </h2>
-          <p class="lead" style="margin-bottom: var(--spacing-3); color: var(--color-text-main);">
-            Founded in 2008 in Ohio's industrial heartland, ChemDist Pro was established to resolve the chronic headaches faced by manufacturing plants: delayed solvent deliveries, inconsistent chemical batches, and missing compliance paperwork.
+          <h1>
+            Nurturing Confident <span class="highlight-italic">Garment Makers &amp; Designers</span>
+          </h1>
+          <p>
+            Dedicated to hands-on tailoring education, individual mentorship, and empowering women with lifelong
+            self-reliant dressmaking and fashion skills.
           </p>
-          
-
-          <ul class="checklist" style="text-align: left; margin-bottom: var(--spacing-5);">
-            <li style="margin-bottom: 10px;">
-              <span class="tick"><i class="ph-bold ph-check"></i></span>
-              <div>
-                <strong>Direct Terminal-to-Plant Distribution</strong>
-                <p style="font-size: 0.875rem; color: var(--color-text-muted); margin-top: 2px;">Eliminating warehouse bottlenecks with streamlined logistics directly from our 180,000 sq ft depot.</p>
-              </div>
-            </li>
-            
-          
-          </ul>
-
-          <div class="cta-actions" style="justify-content: flex-start;">
-            <a href="doctors.html" class="btn btn-primary"><i class="ph ph-file-plus"></i> Open B2B Account</a>
-            <a href="services.html" class="btn btn-outline"><i class="ph ph-arrow-right"></i> View Product Lines</a>
+          <div class="breadcrumb-pill">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>About Our Institute</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CORE VALUES ==================== -->
-    <section class="bg-alt" id="values">
+    <!-- ==================== 2. OUR STORY & VISION & 3. OUR MISSION ==================== -->
+    <section class="section-padding">
       <div class="container">
-        <div class="section-header" data-reveal>
-          <span class="eyebrow centered"><i class="ph ph-shield-check"></i> Operating Standards</span>
-          <h2>Our core chemical <span class="serif">commitments</span></h2>
-          <p>Four pillars that govern every drum filled, every route dispatched, and every client relationship we build.</p>
-        </div>
-
-        <div class="card-grid">
-          <div class="card" style="align-items: flex-start; text-align: left;" data-reveal>
-            <div class="card-icon">
-              <i class="ph ph-shield-star"></i>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-book"></i>
+              <span>Our Story &amp; Heritage</span>
             </div>
-            <h3>Safety &amp; HazMat Rigor</h3>
-            <p>Every employee, driver, and packaging technician undergoes continuous OSHA HazCom and DOT HazMat safety training to ensure zero-incident transport.</p>
-            <span class="pill" style="margin-top: auto;"><i class="ph ph-check"></i> 100% DOT Certified</span>
+            <h2 class="section-title mb-3">
+              Built on the Belief That <span class="highlight-italic">Every Stitch Builds Confidence</span>
+            </h2>
+            <p>
+              <strong>Velora</strong> was established to bridge the gap between casual home sewing
+              and
+              professional boutique craftsmanship. Many aspiring learners want to stitch their own saree blouses,
+              chudidhars, and family garments, yet feel intimidated by complex pattern charts or fast-paced classrooms.
+            </p>
+            <p>
+              We created an inviting, studio-first institute where learning happens through doing—measuring real
+              proportions, drafting personalized patterns on paper, cutting fabrics with precision, and assembling
+              garments under the watchful eyes of experienced women mentors.
+            </p>
+
+            <div class="row g-4 mt-2">
+              <div class="col-md-6">
+                <div class="editorial-card p-4">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-eye-fill text-primary fs-4"></i>
+                    <h3 class="h5 mb-0">Our Vision</h3>
+                  </div>
+                  <p class="small mb-0">
+                    To be a trusted community hub for practical tailoring and garment-design education that transforms
+                    beginners into skilled, independent fashion creators and home boutique owners.
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="editorial-card p-4">
+                  <div class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-bullseye text-primary fs-4"></i>
+                    <h3 class="h5 mb-0">Our Mission</h3>
+                  </div>
+                  <p class="small mb-0">
+                    To deliver structured, accessible, 100% hands-on training in stitching, pattern making, and surface
+                    embroidery with individual attention for every learner.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="card" style="align-items: flex-start; text-align: left; --reveal-delay: 100ms;" data-reveal>
-            <div class="card-icon">
-              <i class="ph ph-flask"></i>
+          <div class="col-lg-6 reveal-up">
+            <div class="stitch-frame">
+              <img src="https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&fit=crop&w=1000&q=85"
+                alt="Garment studio workspace with neatly tailored outfits and fabrics" loading="lazy">
             </div>
-            <h3>Batch Verification</h3>
-            <p>Every batch of heavy degreaser, acid descaler, or disinfectant is analyzed in our analytical laboratory via GC-MS and titration for consistent concentration.</p>
-            <span class="pill" style="margin-top: auto;"><i class="ph ph-check"></i> ISO 9001 Tested</span>
           </div>
-
-          <div class="card" style="align-items: flex-start; text-align: left; --reveal-delay: 200ms;" data-reveal>
-            <div class="card-icon">
-              <i class="ph ph-truck"></i>
-            </div>
-            <h3>Supply Chain Certainty</h3>
-            <p>We maintain multi-million gallon buffer reserves in our regional bulk storage silos so your facility never experiences manufacturing line stoppages.</p>
-            <span class="pill" style="margin-top: auto;"><i class="ph ph-check"></i> Guaranteed Stock</span>
-          </div>
-
-          
         </div>
       </div>
     </section>
 
-    <!-- ==================== GROWTH TIMELINE ==================== -->
-    <section id="timeline">
+    <!-- ==================== 4. WHY WE STARTED THIS TRAINING CENTER ==================== -->
+    <section class="section-padding section-ivory-alt">
       <div class="container">
-        <div class="section-header" data-reveal>
-          <span class="eyebrow centered"><i class="ph ph-chart-line-up"></i> Milestones</span>
-          <h2>Our journey of <span class="serif">growth &amp; excellence</span></h2>
-          <p>From a local solvent terminal to an enterprise chemical logistics partner serving 1,500+ commercial clients nationwide.</p>
-        </div>
-
-        <div class="timeline-wrap" data-reveal>
-          <!-- Milestone 1 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2008</span>
-              <h3 style="margin-bottom: 6px; font-size: 1.25rem;">Founding of ChemDist Pro</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: 0;">
-                Established our initial 25,000 sq ft regional solvent packaging facility in Ohio with 3 dedicated delivery trucks serving local metalworking and automotive manufacturers.
-              </p>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 order-2 order-lg-1 reveal-up">
+            <div class="stitch-frame">
+              <img src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&w=1000&q=85"
+                alt="Fashion design sketches, fabric swatches, and tailoring tools on workbench" loading="lazy">
             </div>
           </div>
 
-          <!-- Milestone 2 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2013</span>
-              <h3 style="margin-bottom: 6px; font-size: 1.25rem;">Automated Bulk Drum &amp; Tote Filling Lines</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: 0;">
-                Installed high-speed automated filling lines for 55-gallon drums and 275-gallon IBC totes with nitrogen-purged tanks for sensitive solvent formulations.
-              </p>
+          <div class="col-lg-7 order-1 order-lg-2 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-lightbulb"></i>
+              <span>Our Purpose</span>
             </div>
-          </div>
-
-          <!-- Milestone 3 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2017</span>
-              <h3 style="margin-bottom: 6px; font-size: 1.25rem;">ISO 9001:2015 &amp; EPA Registration</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: 0;">
-                Attained ISO 9001:2015 certification for our analytical quality assurance laboratory and registered our hospital-grade disinfectant production with the EPA.
-              </p>
-            </div>
-          </div>
-
-          <!-- Milestone 4 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2021</span>
-              <h3 style="margin-bottom: 6px; font-size: 1.25rem;">Digital Client Portal &amp; Telemetry Replenishment</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: 0;">
-                Launched our proprietary B2B client dashboard, providing live SDS downloads, digital invoices, and IoT tank-level automated replenishment alerts.
-              </p>
-            </div>
-          </div>
-
-          <!-- Milestone 5 -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <span class="timeline-year">2026</span>
-              <h3 style="margin-bottom: 6px; font-size: 1.25rem;">Nationwide Reach with 1,500+ Accounts</h3>
-              <p style="color: var(--color-text-muted); font-size: 0.9375rem; margin-bottom: 0;">
-                Today, ChemDist Pro operates over 180,000 sq ft of distribution terminal space, managing 500+ SKUs with a 99.4% on-time delivery record across all commercial accounts.
-              </p>
+            <h2 class="section-title mb-3">
+              Why We Started <span class="highlight-italic">This Training Center</span>
+            </h2>
+            <p>
+              Across many households, women possess strong creative instincts for colors, saree combinations, and dress
+              silhouettes, but lack access to patient, structured technical guidance in garment cutting and fitting.
+            </p>
+            <p>
+              We noticed that many short workshops only demonstrate cutting on a blackboard without allowing students to
+              cut and stitch complete garments themselves. When learners went home, they struggled with common issues
+              such as shoulder slipping in deep-neck blouses, armhole creases, or uneven chudidhar slits.
+            </p>
+            <div class="editorial-card mt-4 p-4">
+              <h3 class="h5 mb-2">Our Founding Commitment</h3>
+              <ul class="list-unstyled mb-0 d-flex flex-column gap-2">
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                  <span><strong>No Blackboard-Only Theory:</strong> Every formula is immediately tested by the student
+                    on paper and fabric.</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                  <span><strong>Self-Reliance &amp; Livelihood:</strong> Enable homemakers and graduates to earn
+                    independently from home or start a boutique studio.</span>
+                </li>
+                <li class="d-flex align-items-start gap-2">
+                  <i class="bi bi-check-circle-fill text-primary mt-1"></i>
+                  <span><strong>Custom Fit Mastery:</strong> Teach students how to adapt patterns for petite, regular,
+                    and plus-size body measurements.</span>
+                </li>
+              </ul>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== LEADERSHIP TEAM ==================== -->
-    <section class="bg-alt" id="team">
+    <!-- ==================== 5. OUR TEACHING APPROACH ==================== -->
+    <section class="section-padding">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: var(--spacing-6); flex-wrap: wrap; gap: var(--spacing-3);" data-reveal>
-          <div style="max-width: 620px;">
-            <span class="eyebrow" style="margin-bottom: var(--spacing-2);"><i class="ph ph-users"></i> Executive Leadership</span>
-            <h2 style="margin-bottom: var(--spacing-2);">Meet your chemical <span class="serif">specialists</span></h2>
-            <p class="muted">Industry veterans, formulation chemists, and logistics directors dedicated to your facility's operational success.</p>
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-sliders"></i>
+            <span>Pedagogy &amp; Mentorship</span>
           </div>
-          <a href="doctors.html" class="btn btn-outline">All Specialists <i class="ph ph-arrow-right"></i></a>
+          <h2 class="section-title">
+            Our Practical <span class="highlight-italic">Teaching Approach</span>
+          </h2>
+          <div class="stitch-divider" aria-hidden="true">
+            <span class="stitch-line"></span>
+            <span class="stitch-icon"><i class="bi bi-scissors"></i></span>
+            <span class="stitch-line"></span>
+          </div>
+          <p>
+            We tailor our instruction to match your entry skill level so you progress steadily from basic machine
+            control to intricate bridal garment construction.
+          </p>
         </div>
 
-        <div class="card-grid">
-          <!-- Specialist 1 -->
-          <div class="card" style="padding: 0; overflow: hidden; align-items: stretch; text-align: left;" data-reveal>
-            <div class="card-media doc-photo">
-              <img src="https://img.magnific.com/free-photo/ambitious-businessman-standing-street_1262-3451.jpg?semt=ais_hybrid&w=740&q=80" alt="Robert Vance" loading="lazy">
-            </div>
-            <div style="padding: var(--spacing-4); flex-grow: 1; display: flex; flex-direction: column;">
-              <h3 style="margin-bottom: 4px;">Mannan Charle</h3>
-              <span style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem; margin-bottom: var(--spacing-2); display: block;">VP Technical Sales · Solvents</span>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--spacing-3);">
-                <span class="tag">Heavy Solvents</span>
-                <span class="tag">Degreasing</span>
-              </div>
-              <p style="font-size: 0.875rem; margin-bottom: var(--spacing-4);">"Assisting manufacturing facilities in optimizing cleaning solvent efficiency and ensuring complete OSHA safety compliance."</p>
-              <div style="margin-top: auto; padding-top: var(--spacing-3); border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
-                <span style="color: var(--color-text-muted);">18+ Yrs Exp.</span>
-                <a href="doctors.html" class="btn btn-outline btn-sm">Consult Robert <i class="ph ph-user"></i></a>
-              </div>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-1-circle"></i></div>
+              <h3>Personal Pattern Record Book</h3>
+              <p class="small mb-0">
+                Each student builds their own illustrated drafting notebook containing measurement charts, neck
+                diagrams, and cutting formulas for future reference.
+              </p>
             </div>
           </div>
 
-          <!-- Specialist 2 -->
-          <div class="card" style="padding: 0; overflow: hidden; align-items: stretch; text-align: left; --reveal-delay: 100ms;" data-reveal>
-            <div class="card-media doc-photo">
-              <img src="https://wcorlando.com/wp-content/uploads/Foto-profesional-dr.-fig.jpg" alt="Dr. Elena Rodriguez" loading="lazy">
-            </div>
-            <div style="padding: var(--spacing-4); flex-grow: 1; display: flex; flex-direction: column;">
-              <h3 style="margin-bottom: 4px;">Dr. Gayu Reddy</h3>
-              <span style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem; margin-bottom: var(--spacing-2); display: block;">Lead Formulation Chemist</span>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--spacing-3);">
-                <span class="tag">EPA Disinfectants</span>
-                <span class="tag">Custom Blends</span>
-              </div>
-              <p style="font-size: 0.875rem; margin-bottom: var(--spacing-4);">"Formulating low-VOC, high-efficacy disinfectants and heavy degreasers that meet strict EPA standards."</p>
-              <div style="margin-top: auto; padding-top: var(--spacing-3); border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
-                <span style="color: var(--color-text-muted);">10+ Yrs Exp.</span>
-                <a href="doctors.html" class="btn btn-outline btn-sm">Consult Elena <i class="ph ph-flask"></i></a>
-              </div>
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-2-circle"></i></div>
+              <h3>Miniature to Full-Scale Practice</h3>
+              <p class="small mb-0">
+                Beginners practice seam control on cotton swatches and paper blocks before cutting full-size blouses,
+                kurtis, and lining fabrics.
+              </p>
             </div>
           </div>
 
-          <!-- Specialist 3 -->
-          <div class="card" style="padding: 0; overflow: hidden; align-items: stretch; text-align: left; --reveal-delay: 200ms;" data-reveal>
-            <div class="card-media doc-photo">
-              <img src="https://thelightcommittee.com/wp-content/uploads/black-male-professional-headshot-los-angeles.jpg" alt="Michael Chen" loading="lazy">
-            </div>
-            <div style="padding: var(--spacing-4); flex-grow: 1; display: flex; flex-direction: column;">
-              <h3 style="margin-bottom: 4px;">Saran Hendry</h3>
-              <span style="color: var(--color-primary); font-weight: 500; font-size: 0.875rem; margin-bottom: var(--spacing-2); display: block;">Director of HazMat Fleet Logistics</span>
-              <div style="display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: var(--spacing-3);">
-                <span class="tag">Fleet Logistics</span>
-                <span class="tag">Bulk Drum Freight</span>
-              </div>
-              <p style="font-size: 0.875rem; margin-bottom: var(--spacing-4);">"Managing 99.4% on-time delivery across regional warehouse hubs with complete HazMat certification and driver training."</p>
-              <div style="margin-top: auto; padding-top: var(--spacing-3); border-top: 1px solid var(--color-border); display: flex; justify-content: space-between; align-items: center; font-size: 0.875rem;">
-                <span style="color: var(--color-text-muted);">14+ Yrs Exp.</span>
-                <a href="doctors.html" class="btn btn-outline btn-sm">Consult Michael <i class="ph ph-truck"></i></a>
-              </div>
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-3-circle"></i></div>
+              <h3>Fitting Diagnostics</h3>
+              <p class="small mb-0">
+                Learn why wrinkles or pulling happen at the bust dart, waist, or sleeve cap—and exactly how to alter the
+                seam line for a smooth silhouette.
+              </p>
             </div>
           </div>
 
-          <!-- Specialist 4 -->
-          
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-4-circle"></i></div>
+              <h3>Boutique Finishing Standards</h3>
+              <p class="small mb-0">
+                We emphasize inside-out garment quality: clean overlocked or turned seams, concealed hems, neat cord
+                piping, and crisp steam pressing.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CERTIFICATIONS & COMPLIANCE ==================== -->
-    <section id="certifications">
+    <!-- ==================== 6. PRACTICAL LEARNING ENVIRONMENT ==================== -->
+    <section class="section-padding section-ivory-alt">
       <div class="container">
-        <div class="section-header" data-reveal>
-          <span class="eyebrow centered"><i class="ph ph-seal-check"></i> Industry Recognition</span>
-          <h2>Certified to highest <span class="serif">regulatory standards</span></h2>
-          <p>ChemDist Pro maintains strict compliance with all state, federal, and international chemical distribution authorities.</p>
-        </div>
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-building"></i>
+              <span>Inside Our Studio</span>
+            </div>
+            <h2 class="section-title mb-3">
+              A Dedicated, Well-Equipped <span class="highlight-italic">Practical Learning Environment</span>
+            </h2>
+            <p>
+              Our training center is set up like a working fashion atelier. Rather than sitting at lecture desks,
+              students work around wide pattern-cutting tables, dedicated sewing machine stations, dressmaker
+              mannequins,
+              and Aari embroidery cot frames.
+            </p>
 
-        <div class="cert-grid" data-reveal>
-          <div class="cert-card">
-            <i class="ph ph-certificate cert-icon"></i>
-            <h4 style="margin-bottom: 4px; font-size: 1.05rem;">ISO 9001:2015</h4>
-            <p class="small muted" style="margin-bottom: 0;">Certified Quality Management</p>
+            <div class="row g-3 mt-3">
+              <div class="col-sm-6">
+                <div class="skill-swatch-card">
+                  <span class="skill-swatch-icon"><i class="bi bi-gear-wide-connected"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Individual Machine Stations</h3>
+                    <p class="small mb-0">Well-maintained motorized and pedal sewing machines for uninterrupted
+                      practice.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-swatch-card">
+                  <span class="skill-swatch-icon"><i class="bi bi-aspect-ratio"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Full-Length Cutting Tables</h3>
+                    <p class="small mb-0">Spacious surfaces for laying out saree borders, salwar fabrics, and pattern
+                      sheets.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-swatch-card">
+                  <span class="skill-swatch-icon"><i class="bi bi-person-standing-dress"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Dressforms &amp; Trial Area</h3>
+                    <p class="small mb-0">Test garment drape, neckline symmetry, and sleeve alignment accurately.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="skill-swatch-card">
+                  <span class="skill-swatch-icon"><i class="bi bi-flower1"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Aari Cot &amp; Hoop Corner</h3>
+                    <p class="small mb-0">Dedicated embroidery frames with natural lighting for detailed thread and
+                      beadwork.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <div class="cert-card">
-            <i class="ph ph-shield-check cert-icon"></i>
-            <h4 style="margin-bottom: 4px; font-size: 1.05rem;">EPA Registered</h4>
-            <p class="small muted" style="margin-bottom: 0;">Commercial Disinfectant Facility</p>
-          </div>
-
-          <div class="cert-card">
-            <i class="ph ph-truck cert-icon"></i>
-            <h4 style="margin-bottom: 4px; font-size: 1.05rem;">DOT HazMat</h4>
-            <p class="small muted" style="margin-bottom: 0;">Certified Fleet Transport</p>
-          </div>
-
-          <div class="cert-card">
-            <i class="ph ph-hard-hat cert-icon"></i>
-            <h4 style="margin-bottom: 4px; font-size: 1.05rem;">OSHA HazCom 2012</h4>
-            <p class="small muted" style="margin-bottom: 0;">100% GHS Label Compliance</p>
-          </div>
-
-          <div class="cert-card">
-            <i class="ph ph-handshake cert-icon"></i>
-            <h4 style="margin-bottom: 4px; font-size: 1.05rem;">NACD Member</h4>
-            <p class="small muted" style="margin-bottom: 0;">Responsible Distribution Verified</p>
+          <div class="col-lg-6 reveal-up">
+            <div class="row g-3">
+              <div class="col-12">
+                <div class="stitch-frame">
+                  <img
+                    src="https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1000&q=85"
+                    alt="Tailoring classroom interior with neatly finished garments and fabric tables" loading="lazy">
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== BOTTOM CTA ==================== -->
-    <section class="bg-deep" id="cta">
-      <div class="mesh mesh-1" style="opacity: .16;"></div>
-      <div class="container container-narrow" style="text-align: center; position: relative; z-index: 2;" data-reveal>
-        <span class="eyebrow centered" style="margin-bottom: var(--spacing-3);"><i class="ph ph-handshake"></i> Partnership</span>
-        <h2 style="margin-bottom: var(--spacing-3);">Experience the <span class="serif">ChemDist Pro</span> supply advantage</h2>
-        <p class="lead" style="color: rgba(255,255,255,.72); margin-bottom: var(--spacing-5);">
-          Partner with a chemical distributor that treats your facility's operational uptime as mission-critical. Request your commercial B2B account setup today.
+    <!-- ==================== 7. EXPERIENCED TRAINERS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-award"></i>
+            <span>Mentors Who Care</span>
+          </div>
+          <h2 class="section-title">
+            Meet Our Experienced <span class="highlight-italic">Tailoring &amp; Design Faculty</span>
+          </h2>
+          <p>
+            Our all-women faculty combines technical precision with warm encouragement so every student feels
+            comfortable
+            asking questions and repeating steps until mastered.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=85"
+                  alt="Mrs. Kavitha Sundaram, Head of Garment Construction" loading="lazy">
+                <span class="trainer-specialty-pill">Pattern &amp; Bridal Blouses</span>
+              </div>
+              <div class="p-4">
+                <h3 class="h5 mb-1">Mrs. Kavitha Sundaram</h3>
+                <p class="small text-primary fw-semibold mb-2">Principal Tailoring Instructor</p>
+                <p class="small mb-0">
+                  Expert in mathematical pattern drafting, princess-cut and katori blouses, and custom body proportion
+                  corrections.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=800&q=85"
+                  alt="Ms. Meenakshi Rajan, Senior Aari Embroidery Mentor" loading="lazy">
+                <span class="trainer-specialty-pill">Aari &amp; Zardosi Craft</span>
+              </div>
+              <div class="p-4">
+                <h3 class="h5 mb-1">Ms. Meenakshi Rajan</h3>
+                <p class="small text-primary fw-semibold mb-2">Lead Embroidery Instructor</p>
+                <p class="small mb-0">
+                  Specializes in traditional Aari needlework, zari thread control, mirror work, and bridal blouse motif
+                  composition.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=800&q=85"
+                  alt="Mrs. Anitha Lakshmi, Chudidhar and Ethnic Apparel Mentor" loading="lazy">
+                <span class="trainer-specialty-pill">Chudidhar &amp; Ethnic Wear</span>
+              </div>
+              <div class="p-4">
+                <h3 class="h5 mb-1">Mrs. Anitha Lakshmi</h3>
+                <p class="small text-primary fw-semibold mb-2">Senior Dressmaking Trainer</p>
+                <p class="small mb-0">
+                  Trains students in salwar kameez construction, collar finishing, palazzo trousers, and neat lining
+                  attachment.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="trainer-card">
+              <div class="trainer-photo-wrap">
+                <img src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?auto=format&fit=crop&w=800&q=85"
+                  alt="Ms. Deepika Narayanan, Fashion Designing and Boutique Mentor" loading="lazy">
+                <span class="trainer-specialty-pill">Fashion Design &amp; Styling</span>
+              </div>
+              <div class="p-4">
+                <h3 class="h5 mb-1">Ms. Deepika Narayanan</h3>
+                <p class="small text-primary fw-semibold mb-2">Fashion Design &amp; Draping Mentor</p>
+                <p class="small mb-0">
+                  Guides aspiring designers in fabric selection, silhouette planning, color coordination, and boutique
+                  client consultations.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. STUDENT SUCCESS & ACHIEVEMENTS ==================== -->
+    <section class="section-padding section-ivory-alt">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <div class="stitch-frame">
+              <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=1000&q=85"
+                alt="Boutique display of finished student garments and custom tailored dresses" loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-trophy"></i>
+              <span>Real Outcomes</span>
+            </div>
+            <h2 class="section-title mb-3">
+              Student Success <span class="highlight-italic">&amp; Achievements</span>
+            </h2>
+            <p>
+              The true measure of our training center is the pride on a student's face when she wears a saree blouse,
+              kurti, or embroidered outfit that she measured, drafted, cut, and stitched entirely with her own hands.
+            </p>
+
+            <div class="d-flex flex-column gap-3 mt-4">
+              <div class="editorial-card p-3">
+                <div class="d-flex align-items-start gap-3">
+                  <span class="floating-badge-icon"><i class="bi bi-house-heart"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Home Tailoring Studios Launched</h3>
+                    <p class="small mb-0">
+                      Many of our homemaker graduates now accept regular blouse, chudidhar, and alteration orders right
+                      from their neighborhoods.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-card p-3">
+                <div class="d-flex align-items-start gap-3">
+                  <span class="floating-badge-icon"><i class="bi bi-stars"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Bridal Aari &amp; Designer Commissions</h3>
+                    <p class="small mb-0">
+                      Students trained in our Aari Embroidery and Saree Blouse Designing modules create custom festive
+                      and bridal blouses for family occasions and boutique clients.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="editorial-card p-3">
+                <div class="d-flex align-items-start gap-3">
+                  <span class="floating-badge-icon"><i class="bi bi-journal-richtext"></i></span>
+                  <div>
+                    <h3 class="h6 mb-1">Complete Personal Garment Portfolios</h3>
+                    <p class="small mb-0">
+                      Every learner completes a practical portfolio of stitched samples, drafted paper blocks, and
+                      full-size wearable garments.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. WHY STUDENTS TRUST US ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-shield-heart"></i>
+            <span>Our Core Pillars</span>
+          </div>
+          <h2 class="section-title">
+            Why Students &amp; Families <span class="highlight-italic">Trust Our Institute</span>
+          </h2>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card text-center">
+              <div class="card-icon-badge mx-auto"><i class="bi bi-hand-thumbs-up"></i></div>
+              <h3>Honest, Practical Guidance</h3>
+              <p class="small mb-0">
+                We focus 100% on real tailoring skills—no exaggerated promises, just thorough daily practice until your
+                seams and fittings are accurate.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card text-center">
+              <div class="card-icon-badge mx-auto"><i class="bi bi-people-fill"></i></div>
+              <h3>Small Batch Sizes</h3>
+              <p class="small mb-0">
+                By keeping batch counts limited, our instructors can stand beside your cutting table and guide your hand
+                during crucial neckline and armhole cuts.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card text-center">
+              <div class="card-icon-badge mx-auto"><i class="bi bi-heart-pulse"></i></div>
+              <h3>Welcoming for All Ages</h3>
+              <p class="small mb-0">
+                Whether you are an 18-year-old student exploring fashion design or a homemaker starting a new skill
+                chapter, our supportive community welcomes you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 10. ENROLLMENT CTA ==================== -->
+    <section class="section-padding section-burgundy">
+      <div class="container text-center reveal-up">
+        <div class="eyebrow-badge eyebrow-badge-light">
+          <i class="bi bi-scissors"></i>
+          <span>Visit Our Studio</span>
+        </div>
+        <h2 class="section-title mb-3" style="max-width: 720px; margin-inline: auto;">
+          Begin Your Practical <span class="highlight-italic">Tailoring Journey With Us</span>
+        </h2>
+        <p class="mx-auto mb-4" style="max-width: 620px;">
+          Explore our eight specialized training programs or speak with our faculty to select the right course for your
+          goals.
         </p>
-        <div class="cta-actions">
-          <a href="doctors.html" class="btn btn-light btn-lg"><i class="ph ph-file-plus"></i> Request Terms</a>
-          <a href="tel:8005550199" class="btn btn-on-deep btn-lg"><i class="ph ph-phone"></i> (800) 555-0199</a>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="courses.html" class="btn-ttc-gold">
+            <span>Explore Training Courses</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a href="contact.html#enrollment-form" class="btn-ttc-outline-light">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll Now</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <!-- ==================== CONSISTENT PREMIUM FOOTER ==================== -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <a href="index.html" class="logo" style="margin-bottom: var(--spacing-3);">
-            <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-            <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-emblem">
+              <i class="bi bi-scissors"></i>
+            </span>
+            <span class="brand-text-wrap">
+              <span class="footer-brand-title">Velora</span>
+              </span>
           </a>
-          <p>Premier B2B distributor of industrial cleaning chemicals, heavy solvents, sanitizers, and facility supplies.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
-            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+          <p class="small mb-3" style="color: rgba(250, 247, 242, 0.78);">
+            Empowering beginners, homemakers, students, and women entrepreneurs with 100% practical training in sewing
+            machine operation, blouse designing, chudidhar construction, pattern drafting, and Aari embroidery.
+          </p>
+          <div class="footer-social-links" aria-label="Social Media Links">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="WhatsApp Inquiry"><i
+                class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Catalog</h4>
-          <div class="footer-links">
-            <a href="services.html#degreasers">Solvents &amp; Degreasers</a>
-            <a href="services.html#sanitizers">EPA Disinfectants</a>
-            <a href="services.html#floorcare">Commercial Floor Care</a>
-            <a href="services.html#safety-gear">OSHA Safety Gear</a>
-          </div>
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Institute</a></li>
+            <li><a href="courses.html"><i class="bi bi-chevron-right small"></i> Training Courses</a></li>
+            <li><a href="batch-timings.html"><i class="bi bi-chevron-right small"></i> Batch Timings</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Enroll</a></li>
+          </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Company</h4>
-          <div class="footer-links">
-            <a href="about.html">About ChemDist Pro</a>
-            <a href="doctors.html">Ordering &amp; Logistics</a>
-            <a href="blog.html">SDS Library</a>
-            <a href="contact.html">Contact Sales</a>
-            <a href="dashboard.html">Client Dashboard</a>
-          </div>
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer-heading">Our Courses</h3>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#basic-tailoring"><i class="bi bi-chevron-right small"></i> Basic Tailoring
+                Course</a></li>
+            <li><a href="courses.html#advanced-tailoring"><i class="bi bi-chevron-right small"></i> Advanced Tailoring
+                Course</a></li>
+            <li><a href="courses.html#blouse-stitching"><i class="bi bi-chevron-right small"></i> Blouse Stitching
+                Course</a></li>
+            <li><a href="courses.html#chudidhar-stitching"><i class="bi bi-chevron-right small"></i> Chudidhar Stitching
+                Course</a></li>
+            <li><a href="courses.html#aari-embroidery"><i class="bi bi-chevron-right small"></i> Aari Embroidery
+                Course</a></li>
+            <li><a href="courses.html#pattern-making"><i class="bi bi-chevron-right small"></i> Pattern Making
+                Course</a></li>
+          </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-links">
-            <a href="contact.html"><i class="ph ph-map-pin"></i> 850 Industrial Parkway, Building<br>Supply Hub, OH 44101</a>
-            <a href="tel:8005550199"><i class="ph ph-phone"></i> (800) 555-0199</a>
-            <a href="mailto:orders@chemdistpro.com"><i class="ph ph-envelope"></i> orders@chemdistpro.com</a>
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contact Information</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>[Institute Address Placeholder: Street, Landmark, City &amp; PIN Code]</span>
           </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>[Phone Placeholder: +91 XXXXX XXXXX]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>[Email Placeholder: admissions@velora.example]</span>
+          </div>
+          <div class="footer-contact-item mb-3">
+            <i class="bi bi-clock"></i>
+            <span>[Working Hours Placeholder: Mon – Sat, Morning to Evening Sessions]</span>
+          </div>
+          <a href="contact.html#enrollment-form" class="btn-ttc-gold btn-sm-ttc w-100">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll in Next Batch</span>
+          </a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 ChemDist Pro Supplies Inc. All rights reserved.</p>
-        <nav>
-          <a href="#">Privacy</a>
-          <a href="#">Terms of Sale</a>
-          <a href="#">OSHA Compliance</a>
-        </nav>
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <span>&copy; 2026 Velora. All Rights Reserved.</span>
+        <span>Crafted with precision for aspiring garment makers &amp; fashion creators.</span>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" type="button" aria-label="Back to top"><i class="ph ph-arrow-up" aria-hidden="true"></i></button>
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
+  <!-- Bootstrap 5 JS Bundle & Custom Main Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

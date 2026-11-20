@@ -1,0 +1,875 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Training Courses | Velora — Blouse, Chudidhar, Aari &amp; Pattern Making</title>
+  <meta name="description"
+    content="Explore our 8 hands-on tailoring courses including Basic Tailoring, Advanced Tailoring, Blouse Stitching, Chudidhar Stitching, Aari Embroidery, Pattern Making, and Fashion Designing.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Decorative Top Running Stitch Bar -->
+  <div class="animated-stitch-bar" aria-hidden="true"></div>
+
+  <!-- ==================== CONSISTENT PREMIUM HEADER ==================== -->
+  <header class="site-header" id="topHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo" aria-label="Velora Home">
+          <span class="brand-emblem" aria-hidden="true">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-item-link">Home</a>
+          <a href="home2.html" class="nav-item-link">Home 2</a>
+          <a href="about.html" class="nav-item-link">About</a>
+          <a href="courses.html" class="nav-item-link active" aria-current="page">Courses</a>
+          <a href="batch-timings.html" class="nav-item-link">Batch Timings</a>
+          <a href="gallery.html" class="nav-item-link">Gallery</a>
+          <a href="contact.html" class="nav-item-link">Contact</a>
+        </nav>
+
+        <div class="header-cta-group">
+          <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout"
+            title="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+            <span class="utility-btn-label">RTL</span>
+          </button>
+          <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme"
+            title="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <a href="contact.html#enrollment-form" class="btn-ttc-primary btn-sm-ttc header-cta-desktop">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll Now</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+            aria-controls="mobileNavDrawer">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-emblem">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close Navigation Menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer-links">
+        <li><a href="index.html" class="mobile-drawer-link"><span>Home</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="home2.html" class="mobile-drawer-link"><span>Home 2 (Atelier View)</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html" class="mobile-drawer-link"><span>About Our Institute</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="courses.html" class="mobile-drawer-link active"><span>Training Courses</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="batch-timings.html" class="mobile-drawer-link"><span>Batch Timings</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="gallery.html" class="mobile-drawer-link"><span>Student Works Gallery</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html" class="mobile-drawer-link"><span>Contact &amp; Enrollment</span><i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="drawer-utility-bar">
+        <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout">
+          <i class="bi bi-arrow-left-right"></i>
+          <span class="utility-btn-label">RTL</span>
+        </button>
+        <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme">
+          <i class="bi bi-moon-stars"></i>
+          <span class="utility-btn-label">Theme</span>
+        </button>
+      </div>
+      <p class="small mb-3">Ready to begin your hands-on stitching and garment design journey?</p>
+      <a href="contact.html#enrollment-form" class="btn-ttc-primary w-100">
+        <i class="bi bi-journal-check"></i>
+        <span>Enroll Now</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==================== COURSES HERO ==================== -->
+    <section class="page-hero hero-dark">
+      <img class="page-hero-bg"
+        src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1400&q=85"
+        alt="Pattern drafting tools, tailor shears, and fabric preparation table">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-content reveal-up">
+          <div class="eyebrow-badge eyebrow-badge-light">
+            <i class="bi bi-journal-bookmark"></i>
+            <span>8 Hands-On Training Programs</span>
+          </div>
+          <h1>
+            Master Tailoring Skills Through <span class="highlight-italic">Practical Training.</span>
+          </h1>
+          <p>
+            From your very first sewing machine seam to intricate bridal blouses, chudidhar sets, pattern drafting, and
+            Aari embroidery—choose the course tailored to your goals.
+          </p>
+          <div class="breadcrumb-pill">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Training Courses</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8 COURSE CATEGORIES GRID ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-scissors"></i>
+            <span>Course Catalog</span>
+          </div>
+          <h2 class="section-title">
+            Our Specialized <span class="highlight-italic">Tailoring &amp; Design Courses</span>
+          </h2>
+          <div class="stitch-divider" aria-hidden="true">
+            <span class="stitch-line"></span>
+            <span class="stitch-icon"><i class="bi bi-scissors"></i></span>
+            <span class="stitch-line"></span>
+          </div>
+          <p>
+            Every program emphasizes practical fabric cutting, individual measurement drafting, and supervised sewing
+            machine sessions. Course duration and schedule options use editable placeholders that can be customized to
+            your preferred batch pace.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Basic Tailoring Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="basic-tailoring">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1605289355680-75fb41239154?auto=format&fit=crop&w=1000&q=85"
+                  alt="Hands learning straight seam stitching on a sewing machine in Basic Tailoring Course"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Beginner</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">1. Basic Tailoring Course</h3>
+                <p class="small">
+                  Designed for complete beginners with zero sewing experience. Learn machine threading, pedal &amp; speed
+                  control, hand hemming, taking basic measurements, and stitching everyday essentials.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Machine Threading &amp; Tension</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Basic Seams, Tucks &amp; Pleats</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Hooks, Buttons &amp; Plackets</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Simple Petti &amp; Kids Frock</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Basic%20Tailoring%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 2. Advanced Tailoring Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="advanced-tailoring">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=85"
+                  alt="Advanced tailored garments and structured silhouettes on studio rack"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Intermediate to Advanced</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">2. Advanced Tailoring Course</h3>
+                <p class="small">
+                  Elevate your stitching into boutique-grade garment making. Focuses on multi-panel cuts, concealed
+                  zippers, collar variations, lining manipulation, and posture-based fitting adjustments.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Structured Lining &amp; Interfacing</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Concealed Zip &amp; Cord Piping</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Collar &amp; Designer Sleeves</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Multi-Size Fit Alterations</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Advanced%20Tailoring%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 3. Blouse Stitching Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="blouse-stitching">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&fit=crop&w=1000&q=85"
+                  alt="Traditional and designer saree blouse stitching and neckline finishing"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Beginner to Advanced</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">3. Blouse Stitching Course</h3>
+                <p class="small">
+                  Master the art of well-fitted saree blouses without shoulder slipping or armhole bunching. Covers
+                  everyday cotton blouses to padded princess-cut and bridal silk lining blouses.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Plain &amp; Lining 4-Dart Blouse</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Princess Cut &amp; Katori Cut</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Boat Neck, Collar &amp; Back Designs</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Padded Cups &amp; Dori Piping</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Blouse%20Stitching%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 4. Chudidhar Stitching Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="chudidhar-stitching">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1000&q=85"
+                  alt="Chudidhar, salwar suit, and kurti stitching training"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Beginner to Intermediate</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">4. Chudidhar Stitching Course</h3>
+                <p class="small">
+                  Learn to draft and stitch comfortable, flattering salwar suits, daily-wear kurtis, and festive ethnic
+                  sets with crisp side slits, neck plackets, and diverse bottom styles.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Classic Slit Kameez &amp; Lining Top</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Anarkali &amp; Umbrella Cut Kurti</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Patiala, Semi-Patiala &amp; Chudi Bottom</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Straight Pant &amp; Palazzo Trousers</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Chudidhar%20Stitching%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 5. Aari Embroidery Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="aari-embroidery">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1618354691373-d851c5c3a990?auto=format&fit=crop&w=1000&q=85"
+                  alt="Handcrafted Aari embroidery hoop with metallic zari thread and beadwork"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Beginner to Bridal Pro</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">5. Aari Embroidery Course</h3>
+                <p class="small">
+                  Master traditional South Indian Aari cot-frame needlework. Progress from basic chain-stitch thread
+                  control to rich Zardosi, beadwork, stone setting, and bridal blouse tracing.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Cot Frame Setup &amp; Needle Grip</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> 30+ Thread &amp; Zari Stitches</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Sugar Beads, Sequins &amp; Zardosi</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Bridal Blouse Neck &amp; Sleeve Tracing</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Aari%20Embroidery%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 6. Pattern Making Course -->
+          <div class="col-md-6 col-lg-4 reveal-up" id="pattern-making">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&w=1000&q=85"
+                  alt="Precision pattern making with paper blocks, rulers, and tailor chalk"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Intermediate</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">6. Pattern Making Course</h3>
+                <p class="small">
+                  Understand the geometry behind garment fit. Learn to draft reusable master paper patterns (slopers)
+                  for bodices, sleeves, skirts, and trousers across custom body measurements.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Body Measurement &amp; Ease Formulas</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Dart Manipulation &amp; Contouring</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Sleeve Cap &amp; Armscye Calculation</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Pattern Grading &amp; Layout Economy</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Pattern%20Making%20Course#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 7. Fashion Designing Basics -->
+          <div class="col-md-6 col-lg-6 reveal-up" id="fashion-designing">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1537832816519-689ad163238b?auto=format&fit=crop&w=1000&q=85"
+                  alt="Fashion design sketches, fabric swatches, and color wheel planning"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Beginner to Creative</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">7. Fashion Designing Basics</h3>
+                <p class="small">
+                  Combine creative design thinking with practical tailoring. Explore garment silhouettes, fabric weight
+                  and drape behavior, color combination theory, and sketching custom outfit concepts before stitching.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Garment Silhouette &amp; Proportion</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Textile Selection (Silk, Cotton, Crepe)</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Color Harmony &amp; Border Styling</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Custom Client Design Sketching</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Fashion%20Designing%20Basics#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <!-- 8. Professional Garment Making -->
+          <div class="col-md-6 col-lg-6 reveal-up" id="garment-making">
+            <article class="course-card">
+              <div class="course-img-wrap">
+                <img
+                  src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?auto=format&fit=crop&w=1000&q=85"
+                  alt="Finished boutique garments hanging on studio display rack"
+                  loading="lazy">
+                <span class="course-level-badge">Level: Comprehensive Track</span>
+                <span class="course-duration-pill"><i class="bi bi-clock"></i> [Duration: Placeholder]</span>
+              </div>
+              <div class="course-body">
+                <h3 class="course-title">8. Professional Garment Making</h3>
+                <p class="small">
+                  An end-to-end boutique dressmaking program designed for women who want to stitch complete wardrobes or
+                  establish an independent tailoring unit. Integrates blouse, ethnic wear, gowns, and finishing QA.
+                </p>
+                <div class="small fw-semibold text-dark mb-1">Skills Covered:</div>
+                <ul class="course-skills-list">
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Complete Womenswear &amp; Kids Apparel</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Festive Gown &amp; Lehenga Skirt Cuts</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Seam Finishing &amp; Pressing Standards</li>
+                  <li class="course-skill-tag"><i class="bi bi-check2"></i> Order Measurement &amp; Fabric Estimation</li>
+                </ul>
+                <div class="course-footer">
+                  <a href="#course-comparison" class="btn-ttc-secondary btn-sm-ttc">Learn More</a>
+                  <a href="contact.html?course=Professional%20Garment%20Making#enrollment-form"
+                    class="btn-ttc-primary btn-sm-ttc">Enroll Now</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BEGINNER TO ADVANCED LEARNING PATH ==================== -->
+    <section class="section-padding section-ivory-alt">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-signpost-split"></i>
+            <span>Structured Progression</span>
+          </div>
+          <h2 class="section-title">
+            Beginner to Advanced <span class="highlight-italic">Learning Path</span>
+          </h2>
+          <p>
+            Not sure where to start? Follow our four-step skill progression designed to build your confidence layer by
+            layer.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="methodology-step">
+              <span class="step-number-badge">Stage 1</span>
+              <h3>Machine &amp; Stitch Foundations</h3>
+              <p class="small mb-2">
+                Master pedal control, bobbin tension, straight &amp; curved seams, hand hemming, and basic fabric folds.
+              </p>
+              <span class="placeholder-slot"><i class="bi bi-arrow-right-circle"></i> Basic Tailoring</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="methodology-step">
+              <span class="step-number-badge">Stage 2</span>
+              <h3>Core Ethnic Garments</h3>
+              <p class="small mb-2">
+                Draft and stitch everyday chudidhars, salwar bottoms, kurtis, and 4-dart plain &amp; lining saree blouses.
+              </p>
+              <span class="placeholder-slot"><i class="bi bi-arrow-right-circle"></i> Chudidhar &amp; Blouse</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="methodology-step">
+              <span class="step-number-badge">Stage 3</span>
+              <h3>Contoured Patterns &amp; Cuts</h3>
+              <p class="small mb-2">
+                Advance to princess cut, katori cut, collar necklines, concealed zippers, and custom size pattern blocks.
+              </p>
+              <span class="placeholder-slot"><i class="bi bi-arrow-right-circle"></i> Pattern &amp; Advanced</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="methodology-step">
+              <span class="step-number-badge">Stage 4</span>
+              <h3>Bridal &amp; Boutique Craft</h3>
+              <p class="small mb-2">
+                Combine Aari embroidery, Zardosi work, and surface styling to create high-value festive and bridal wear.
+              </p>
+              <span class="placeholder-slot"><i class="bi bi-arrow-right-circle"></i> Aari &amp; Garment Making</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== PRACTICAL TRAINING BENEFITS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-5 reveal-up">
+            <div class="stitch-frame">
+              <img
+                src="https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1000&q=85"
+                alt="Rich fabric collection and garment preparation in tailoring training studio"
+                loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-7 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-stars"></i>
+              <span>Hands-On Advantage</span>
+            </div>
+            <h2 class="section-title mb-3">
+              Practical Training Benefits That <span class="highlight-italic">Make the Difference</span>
+            </h2>
+            <p>
+              Every course at Velora is structured around real workbench practice so that you leave
+              with garments you actually stitched yourself.
+            </p>
+
+            <div class="row g-3 mt-2">
+              <div class="col-sm-6">
+                <div class="editorial-card p-3">
+                  <h3 class="h6 mb-1"><i class="bi bi-check2-square text-primary me-2"></i>Individual Drafting Verification</h3>
+                  <p class="small mb-0">Your paper pattern is checked line-by-line by a trainer before you cut into your cloth.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="editorial-card p-3">
+                  <h3 class="h6 mb-1"><i class="bi bi-check2-square text-primary me-2"></i>All Fabric Types Covered</h3>
+                  <p class="small mb-0">Learn how to handle cotton, poplin, silk, crêpe, georgette, and net with proper lining.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="editorial-card p-3">
+                  <h3 class="h6 mb-1"><i class="bi bi-check2-square text-primary me-2"></i>Mistake-Proof Seam Formulas</h3>
+                  <p class="small mb-0">Simple measurement charts for neck width, armhole depth, and dart length.</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="editorial-card p-3">
+                  <h3 class="h6 mb-1"><i class="bi bi-check2-square text-primary me-2"></i>Take-Home Stitched Portfolio</h3>
+                  <p class="small mb-0">Build a physical collection of sample seams, paper patterns, and finished garments.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== COURSE COMPARISON TABLE ==================== -->
+    <section class="section-padding section-ivory-alt" id="course-comparison">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-table"></i>
+            <span>Side-by-Side Overview</span>
+          </div>
+          <h2 class="section-title">
+            Training Course <span class="highlight-italic">Comparison Guide</span>
+          </h2>
+          <p>
+            Compare skill focus, entry requirements, and editable duration/fee placeholders across all eight tailoring
+            programs.
+          </p>
+        </div>
+
+        <div class="table-editorial-wrap table-responsive reveal-up">
+          <table class="table-editorial" aria-label="Course Comparison Table">
+            <thead>
+              <tr>
+                <th scope="col">Course Name</th>
+                <th scope="col">Recommended Level</th>
+                <th scope="col">Primary Garments / Focus</th>
+                <th scope="col">Duration Placeholder</th>
+                <th scope="col">Fee Structure Placeholder</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Basic Tailoring Course</strong></td>
+                <td>Complete Beginner</td>
+                <td>Machine control, seams, simple bodices, kids wear</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Basic%20Tailoring%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Advanced Tailoring Course</strong></td>
+                <td>Intermediate</td>
+                <td>Structured garments, concealed zips, collars, alterations</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Advanced%20Tailoring%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Blouse Stitching Course</strong></td>
+                <td>Beginner to Advanced</td>
+                <td>Plain, 4-dart lining, princess cut, katori &amp; bridal blouses</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Blouse%20Stitching%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Chudidhar Stitching Course</strong></td>
+                <td>Beginner to Intermediate</td>
+                <td>Slit kameez, kurtis, Patiala, chudi &amp; palazzo bottoms</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Chudidhar%20Stitching%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Aari Embroidery Course</strong></td>
+                <td>All Levels</td>
+                <td>Cot-frame chain stitch, zari, beadwork, Zardosi bridal motifs</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Aari%20Embroidery%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Pattern Making Course</strong></td>
+                <td>Intermediate</td>
+                <td>Master paper blocks, dart manipulation, multi-size grading</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Pattern%20Making%20Course#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Fashion Designing Basics</strong></td>
+                <td>Beginner / Creative</td>
+                <td>Fashion sketching, fabric pairing, color harmony, silhouettes</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Fashion%20Designing%20Basics#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+              <tr>
+                <td><strong>Professional Garment Making</strong></td>
+                <td>Comprehensive Track</td>
+                <td>Full boutique dressmaking, ethnic &amp; festive wear, finishing QA</td>
+                <td><span class="placeholder-slot">[Duration Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Fee Placeholder]</span></td>
+                <td><a href="contact.html?course=Professional%20Garment%20Making#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Inquire</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FREQUENTLY ASKED QUESTIONS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-question-circle"></i>
+            <span>Course FAQs</span>
+          </div>
+          <h2 class="section-title">
+            Frequently Asked <span class="highlight-italic">Course Questions</span>
+          </h2>
+        </div>
+
+        <div class="row justify-content-center reveal-up">
+          <div class="col-lg-9">
+            <div class="accordion ttc-accordion" id="coursesFaqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="cFaqHead1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#cFaqCollapse1" aria-expanded="true" aria-controls="cFaqCollapse1">
+                    I have never used a sewing machine before. Which course should I join first?
+                  </button>
+                </h3>
+                <div id="cFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="cFaqHead1"
+                  data-bs-parent="#coursesFaqAccordion">
+                  <div class="accordion-body">
+                    We recommend starting with the <strong>Basic Tailoring Course</strong> or our beginner-friendly
+                    <strong>Blouse / Chudidhar Stitching Course</strong>. You will first practice pedal control,
+                    threading, and straight/curved stitching on fabric swatches before cutting your first garment.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="cFaqHead2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#cFaqCollapse2" aria-expanded="false" aria-controls="cFaqCollapse2">
+                    Do I need to bring my own sewing machine to class?
+                  </button>
+                </h3>
+                <div id="cFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="cFaqHead2"
+                  data-bs-parent="#coursesFaqAccordion">
+                  <div class="accordion-body">
+                    No. Our training studio is equipped with individual sewing machines, cutting tables, and Aari cot
+                    stands for classroom practice. You only need to bring your personal drafting stationery and practice
+                    fabrics as guided by your instructor.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="cFaqHead3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#cFaqCollapse3" aria-expanded="false" aria-controls="cFaqCollapse3">
+                    Can I combine Blouse Stitching and Aari Embroidery together?
+                  </button>
+                </h3>
+                <div id="cFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="cFaqHead3"
+                  data-bs-parent="#coursesFaqAccordion">
+                  <div class="accordion-body">
+                    Yes! Many learners enroll in Blouse Stitching alongside Aari Embroidery so they can trace, embroider
+                    on the cot frame, and then cut and stitch the complete designer blouse themselves.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="cFaqHead4">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#cFaqCollapse4" aria-expanded="false" aria-controls="cFaqCollapse4">
+                    How can I know the exact duration and fee structure for my chosen course?
+                  </button>
+                </h3>
+                <div id="cFaqCollapse4" class="accordion-collapse collapse" aria-labelledby="cFaqHead4"
+                  data-bs-parent="#coursesFaqAccordion">
+                  <div class="accordion-body">
+                    Course pace depends on whether you choose a regular weekday batch, fast-track schedule, or weekend
+                    slot. Submit an inquiry on our <a href="contact.html#enrollment-form">Contact &amp; Enrollment</a>
+                    page or call our admissions desk to receive current schedule and fee details.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FINAL ENROLLMENT CTA ==================== -->
+    <section class="section-padding section-burgundy">
+      <div class="container text-center reveal-up">
+        <div class="eyebrow-badge eyebrow-badge-light">
+          <i class="bi bi-journal-check"></i>
+          <span>Personalized Course Counseling</span>
+        </div>
+        <h2 class="section-title mb-3" style="max-width: 720px; margin-inline: auto;">
+          Choose Your Course &amp; <span class="highlight-italic">Start Stitching With Confidence</span>
+        </h2>
+        <p class="mx-auto mb-4" style="max-width: 620px;">
+          Speak with our trainers to match your current skill level with the right tailoring or embroidery batch.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html#enrollment-form" class="btn-ttc-gold">
+            <i class="bi bi-pencil-square"></i>
+            <span>Enroll in a Course Today</span>
+          </a>
+          <a href="batch-timings.html" class="btn-ttc-outline-light">
+            <i class="bi bi-calendar-week"></i>
+            <span>Explore Batch Timings</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CONSISTENT PREMIUM FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-emblem">
+              <i class="bi bi-scissors"></i>
+            </span>
+            <span class="brand-text-wrap">
+              <span class="footer-brand-title">Velora</span>
+              </span>
+          </a>
+          <p class="small mb-3" style="color: rgba(250, 247, 242, 0.78);">
+            Empowering beginners, homemakers, students, and women entrepreneurs with 100% practical training in sewing
+            machine operation, blouse designing, chudidhar construction, pattern drafting, and Aari embroidery.
+          </p>
+          <div class="footer-social-links" aria-label="Social Media Links">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="WhatsApp Inquiry"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Institute</a></li>
+            <li><a href="courses.html"><i class="bi bi-chevron-right small"></i> Training Courses</a></li>
+            <li><a href="batch-timings.html"><i class="bi bi-chevron-right small"></i> Batch Timings</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Enroll</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer-heading">Our Courses</h3>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#basic-tailoring"><i class="bi bi-chevron-right small"></i> Basic Tailoring Course</a></li>
+            <li><a href="courses.html#advanced-tailoring"><i class="bi bi-chevron-right small"></i> Advanced Tailoring Course</a></li>
+            <li><a href="courses.html#blouse-stitching"><i class="bi bi-chevron-right small"></i> Blouse Stitching Course</a></li>
+            <li><a href="courses.html#chudidhar-stitching"><i class="bi bi-chevron-right small"></i> Chudidhar Stitching Course</a></li>
+            <li><a href="courses.html#aari-embroidery"><i class="bi bi-chevron-right small"></i> Aari Embroidery Course</a></li>
+            <li><a href="courses.html#pattern-making"><i class="bi bi-chevron-right small"></i> Pattern Making Course</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contact Information</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>[Institute Address Placeholder: Street, Landmark, City &amp; PIN Code]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>[Phone Placeholder: +91 XXXXX XXXXX]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>[Email Placeholder: admissions@velora.example]</span>
+          </div>
+          <div class="footer-contact-item mb-3">
+            <i class="bi bi-clock"></i>
+            <span>[Working Hours Placeholder: Mon – Sat, Morning to Evening Sessions]</span>
+          </div>
+          <a href="contact.html#enrollment-form" class="btn-ttc-gold btn-sm-ttc w-100">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll in Next Batch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <span>&copy; 2026 Velora. All Rights Reserved.</span>
+        <span>Crafted with precision for aspiring garment makers &amp; fashion creators.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle & Custom Main Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>

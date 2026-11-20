@@ -1,305 +1,652 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-  <title>Contact | ChemDist Pro B2B Sales &amp; Distribution Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Course Enrollment | Velora</title>
+  <meta name="description"
+    content="Start your tailoring journey with Velora. Reach our admissions desk, check our studio address and working hours, or submit your course enrollment inquiry.">
   <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-  <meta name="description" content="Contact ChemDist Pro technical sales representatives, request bulk chemical quotes, or locate regional warehouse distribution centers.">
-  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
   <link rel="stylesheet" href="assets/css/style.css">
-  <link rel="stylesheet" href="assets/css/rtl.css">
-  <style>
-    html,
-    body {
-      overflow-x: hidden;
-      width: 100%;
-    }
-  </style>
 </head>
 
 <body>
+  <!-- Decorative Top Running Stitch Bar -->
+  <div class="animated-stitch-bar" aria-hidden="true"></div>
 
-  <!-- Header -->
-  <header class="header">
+  <!-- ==================== CONSISTENT PREMIUM HEADER ==================== -->
+  <header class="site-header" id="topHeader">
     <div class="container">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-        <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
-      </a>
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo" aria-label="Velora Home">
+          <span class="brand-emblem" aria-hidden="true">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
 
-      <nav class="nav-desktop">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="home2.html" class="nav-link">Home2</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Catalog</a>
-        <a href="doctors.html" class="nav-link">Ordering</a>
-        <a href="blog.html" class="nav-link">SDS</a>
-        <a href="contact.html" class="nav-link active">Contact</a>
-        <a href="dashboard.html" class="nav-link">Dashboard</a>
-      </nav>
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-item-link">Home</a>
+          <a href="home2.html" class="nav-item-link">Home 2</a>
+          <a href="about.html" class="nav-item-link">About</a>
+          <a href="courses.html" class="nav-item-link">Courses</a>
+          <a href="batch-timings.html" class="nav-item-link">Batch Timings</a>
+          <a href="gallery.html" class="nav-item-link">Gallery</a>
+          <a href="contact.html" class="nav-item-link active" aria-current="page">Contact</a>
+        </nav>
 
-      <div class="nav-actions">
-        <button class="icon-btn theme-toggle theme-toggle-desktop" aria-label="Toggle Dark Mode">
-          <i class="ph ph-moon"></i>
-        </button>
-        <button class="icon-btn rtl-toggle rtl-toggle-desktop" aria-label="Toggle RTL" title="Toggle RTL">
-          <i class="ph ph-arrows-left-right"></i>
-        </button>
-        <a href="login.html" class="btn btn-primary btn-sm nav-desktop">Login</a>
-        <button class="icon-btn hamburger" aria-label="Open Menu">
-          <i class="ph ph-list"></i>
-        </button>
+        <div class="header-cta-group">
+          <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout"
+            title="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+            <span class="utility-btn-label">RTL</span>
+          </button>
+          <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme"
+            title="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <a href="contact.html#enrollment-form" class="btn-ttc-primary btn-sm-ttc header-cta-desktop">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll Now</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+            aria-controls="mobileNavDrawer">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Mobile Drawer Overlay -->
-  <div class="mobile-drawer-overlay"></div>
-
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer">
-    <div class="drawer-header">
-      <a href="index.html" class="logo">
-        <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-        <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
-      </a>
-      <button class="icon-btn drawer-close" aria-label="Close Menu">
-        <i class="ph ph-x"></i>
-      </button>
-    </div>
-    <nav class="drawer-nav">
-      <a href="index.html" class="drawer-nav-link">Home</a>
-      <a href="home2.html" class="drawer-nav-link">Home2</a>
-      <a href="about.html" class="drawer-nav-link">About</a>
-      <a href="services.html" class="drawer-nav-link">Catalog</a>
-      <a href="doctors.html" class="drawer-nav-link">Ordering</a>
-      <a href="blog.html" class="drawer-nav-link">SDS</a>
-      <a href="contact.html" class="drawer-nav-link active">Contact</a>
-      <a href="dashboard.html" class="drawer-nav-link">Dashboard</a>
-    </nav>
-    <div class="drawer-actions">
-      <div class="drawer-toggles">
-        <button class="icon-btn theme-toggle" aria-label="Toggle Dark Mode"><i class="ph ph-moon"></i></button>
-        <button class="icon-btn rtl-toggle" aria-label="Toggle RTL"><i class="ph ph-arrows-left-right"></i></button>
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-emblem">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close Navigation Menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
       </div>
-      <a href="login.html" class="btn btn-primary btn-block">Login</a>
+
+      <ul class="mobile-drawer-links">
+        <li><a href="index.html" class="mobile-drawer-link"><span>Home</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="home2.html" class="mobile-drawer-link"><span>Home 2 (Atelier View)</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html" class="mobile-drawer-link"><span>About Our Institute</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="courses.html" class="mobile-drawer-link"><span>Training Courses</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="batch-timings.html" class="mobile-drawer-link"><span>Batch Timings</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="gallery.html" class="mobile-drawer-link"><span>Student Works Gallery</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html" class="mobile-drawer-link active"><span>Contact &amp; Enrollment</span><i class="bi bi-chevron-right"></i></a></li>
+      </ul>
     </div>
-  </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="drawer-utility-bar">
+        <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout">
+          <i class="bi bi-arrow-left-right"></i>
+          <span class="utility-btn-label">RTL</span>
+        </button>
+        <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme">
+          <i class="bi bi-moon-stars"></i>
+          <span class="utility-btn-label">Theme</span>
+        </button>
+      </div>
+      <p class="small mb-3">Ready to begin your hands-on stitching and garment design journey?</p>
+      <a href="contact.html#enrollment-form" class="btn-ttc-primary w-100">
+        <i class="bi bi-journal-check"></i>
+        <span>Enroll Now</span>
+      </a>
+    </div>
+  </aside>
 
   <main>
-    <!-- Page Hero -->
-    <section class="hero" style="padding-bottom: var(--spacing-8);">
-      <div class="mesh mesh-1"></div>
-      <div class="mesh mesh-2"></div>
-      <div class="grid-overlay"></div>
+    <!-- ==================== CONTACT HERO ==================== -->
+    <section class="page-hero hero-dark">
+      <img class="page-hero-bg"
+        src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1400&q=85"
+        alt="Velora studio desk with fabric swatches and pattern notebook">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
 
       <div class="container">
-        <div class="section-header" style="margin-bottom: 0;">
-          <span class="eyebrow centered">B2B Sales Support</span>
-          <h1>Get in <span class="serif grad-text">touch</span></h1>
-          <p class="lead">Connect with our chemical technical specialists or request a warehouse distribution quote.</p>
+        <div class="page-hero-content reveal-up">
+          <div class="eyebrow-badge eyebrow-badge-light">
+            <i class="bi bi-envelope-paper-heart"></i>
+            <span>Admissions &amp; Counseling Desk</span>
+          </div>
+          <h1>
+            Start Your Tailoring <span class="highlight-italic">Journey With Us.</span>
+          </h1>
+          <p>
+            Visit our practical studio, speak with our women trainers, or fill out the enrollment inquiry form below to
+            choose the right tailoring course and batch timing.
+          </p>
+          <div class="breadcrumb-pill">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Contact &amp; Enrollment</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section style="padding-top: var(--spacing-6);">
+    <!-- ==================== 1. CONTACT INTRODUCTION & 2-5. PLACEHOLDER CARDS ==================== -->
+    <section class="section-padding">
       <div class="container">
-
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-6);">
-
-          <!-- Contact Form (Left) -->
-          <div class="card" style="align-items: stretch; text-align: left;" data-reveal="left">
-            <h3 style="margin-bottom: var(--spacing-4);">Send a B2B Inquiry</h3>
-
-            <form class="validate-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully! Our technical sales team will respond within 2 hours.');">
-              <div class="form-group">
-                <label class="form-label">Full Name &amp; Title</label>
-                <input type="text" class="form-control" name="name" required placeholder="John Smith, Procurement Lead">
-                <span class="error-message">Name is required</span>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Corporate Email</label>
-                <input type="email" class="form-control" name="email" required placeholder="jsmith@company.com">
-                <span class="error-message">Valid email is required</span>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Phone Number</label>
-                <input type="tel" class="form-control" name="phone" placeholder="(800) 555-0199">
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Inquiry Subject</label>
-                <select class="form-control" name="subject">
-                  <option value="" disabled selected>Select a topic...</option>
-                  <option value="bulk_quote">Bulk Order / Volume Pricing</option>
-                  <option value="recurring">Automated Recurring Delivery</option>
-                  <option value="credit">Net-30 Enterprise Credit Setup</option>
-                  <option value="sds">SDS &amp; OSHA Compliance Assistance</option>
-                  <option value="custom">Custom Chemical Formulation</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label class="form-label">Message Details</label>
-                <textarea class="form-control" name="message" required placeholder="Describe chemical volumes, container types (drums/totes), or specific cleaning application..." rows="4" style="resize: vertical;"></textarea>
-                <span class="error-message">Message is required</span>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%;">Submit Inquiry</button>
-            </form>
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-chat-dots"></i>
+            <span>1. Connect With Our Academy</span>
           </div>
+          <h2 class="section-title">
+            We Welcome You to <span class="highlight-italic">Visit Our Training Studio</span>
+          </h2>
+          <div class="stitch-divider" aria-hidden="true">
+            <span class="stitch-line"></span>
+            <span class="stitch-icon"><i class="bi bi-scissors"></i></span>
+            <span class="stitch-line"></span>
+          </div>
+          <p>
+            Whether you are a beginner curious about sewing machine basics or an experienced stitcher looking to master
+            bridal blouses and Aari embroidery, you can drop by during our studio hours to see our learning environment
+            firsthand.
+          </p>
+        </div>
 
-          <!-- Contact Info (Right) -->
-          <div style="display: flex; flex-direction: column; gap: var(--spacing-4);" data-reveal="right">
-            <div class="card" style="align-items: flex-start; text-align: left; padding: var(--spacing-4);">
-              <div style="display: flex; align-items: center; gap: var(--spacing-3); margin-bottom: var(--spacing-2);">
-                <div style="width: 48px; height: 48px; background: var(--color-primary-light); color: var(--color-primary); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
-                  <i class="ph ph-map-pin"></i>
-                </div>
-                <h3 style="margin: 0; font-size: 1.25rem;">Distribution Hub</h3>
-              </div>
-              <p style="margin: 0;">850 Industrial Parkway, Building B<br>Supply Hub, OH 44101</p>
-            </div>
-
-            <div class="card" style="align-items: flex-start; text-align: left; padding: var(--spacing-4);">
-              <div style="display: flex; align-items: center; gap: var(--spacing-3); margin-bottom: var(--spacing-2);">
-                <div style="width: 48px; height: 48px; background: var(--color-primary-light); color: var(--color-primary); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
-                  <i class="ph ph-phone"></i>
-                </div>
-                <h3 style="margin: 0; font-size: 1.25rem;">Sales Desk</h3>
-              </div>
-              <p style="margin: 0;">(800) 555-0199<br><span style="font-size: 0.875rem; color: var(--color-text-muted);">Mon-Fri: 7:00am - 6:00pm EST</span></p>
-            </div>
-
-            <div class="card" style="align-items: flex-start; text-align: left; padding: var(--spacing-4);">
-              <div style="display: flex; align-items: center; gap: var(--spacing-3); margin-bottom: var(--spacing-2);">
-                <div style="width: 48px; height: 48px; background: var(--color-primary-light); color: var(--color-primary); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
-                  <i class="ph ph-envelope"></i>
-                </div>
-                <h3 style="margin: 0; font-size: 1.25rem;">Orders &amp; SDS Support</h3>
-              </div>
-              <p style="margin: 0;">orders@chemdistpro.com<br><span style="font-size: 0.875rem; color: var(--color-text-muted);">Quotes issued within 2 hours</span></p>
-            </div>
-
-            <div class="card" style="align-items: flex-start; text-align: left; padding: var(--spacing-4);">
-              <div style="display: flex; align-items: center; gap: var(--spacing-3); margin-bottom: var(--spacing-2);">
-                <div style="width: 48px; height: 48px; background: var(--color-primary-light); color: var(--color-primary); border-radius: var(--radius-full); display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">
-                  <i class="ph ph-share-network"></i>
-                </div>
-                <h3 style="margin: 0; font-size: 1.25rem;">Follow Us</h3>
-              </div>
-              <p style="margin: 0 0 var(--spacing-3) 0; font-size: 0.875rem; color: var(--color-text-muted);">Connect with ChemDist Pro</p>
-              <div class="social-links">
-                <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
-                <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+        <div class="row g-4">
+          <!-- 2. Institute Address Placeholder -->
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-geo-alt"></i></div>
+              <h3 class="h5">Institute Address</h3>
+              <p class="small mb-2">
+                Visit our training studio for in-person course counseling and classroom tours:
+              </p>
+              <div class="placeholder-slot w-100 justify-content-start">
+                <i class="bi bi-pin-map"></i>
+                <span>[Institute Address Placeholder: Building, Street, Landmark, City &amp; PIN]</span>
               </div>
             </div>
           </div>
 
-        </div>
+          <!-- 3. Phone Number Placeholder -->
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-telephone"></i></div>
+              <h3 class="h5">Phone &amp; WhatsApp</h3>
+              <p class="small mb-2">
+                Speak directly with our faculty coordinator regarding batch seats and fee details:
+              </p>
+              <div class="placeholder-slot w-100 justify-content-start mb-2">
+                <i class="bi bi-phone"></i>
+                <span>[Phone Placeholder: +91 XXXXX XXXXX]</span>
+              </div>
+              <div class="placeholder-slot w-100 justify-content-start">
+                <i class="bi bi-whatsapp"></i>
+                <span>[WhatsApp Number Placeholder]</span>
+              </div>
+            </div>
+          </div>
 
-        <!-- Interactive Map -->
-        <div class="media-frame" data-reveal style="margin-top: var(--spacing-8); height: 420px; width: 100%; border-radius: var(--radius-xl); overflow: hidden; position: relative;">
-          <iframe 
-            title="ChemDist Pro Distribution Hub Map"
-            src="https://maps.google.com/maps?q=850%20Industrial%20Parkway%2C%20Cleveland%2C%20OH&t=&z=13&ie=UTF8&iwloc=&output=embed" 
-            width="100%" 
-            height="100%" 
-            style="border: 0; width: 100%; height: 100%;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
+          <!-- 4. Email Placeholder -->
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-envelope"></i></div>
+              <h3 class="h5">Email Inquiries</h3>
+              <p class="small mb-2">
+                Write to us for detailed course syllabi, workshop schedules, or institutional queries:
+              </p>
+              <div class="placeholder-slot w-100 justify-content-start mb-2">
+                <i class="bi bi-at"></i>
+                <span>[Email Placeholder: info@velora.example]</span>
+              </div>
+              <div class="placeholder-slot w-100 justify-content-start">
+                <i class="bi bi-at"></i>
+                <span>[Admissions Email Placeholder]</span>
+              </div>
+            </div>
+          </div>
 
+          <!-- 5. Working Hours Placeholder -->
+          <div class="col-md-6 col-lg-3 reveal-up">
+            <div class="editorial-card">
+              <div class="card-icon-badge"><i class="bi bi-clock"></i></div>
+              <h3 class="h5">Working Hours</h3>
+              <p class="small mb-2">
+                Our admissions desk and practical classrooms operate during the following hours:
+              </p>
+              <div class="placeholder-slot w-100 justify-content-start mb-2">
+                <i class="bi bi-calendar-week"></i>
+                <span>[Weekday Hours Placeholder: Mon – Sat]</span>
+              </div>
+              <div class="placeholder-slot w-100 justify-content-start">
+                <i class="bi bi-calendar-day"></i>
+                <span>[Weekend Batch Hours Placeholder]</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- CTA -->
-    <section class="bg-deep">
-      <div class="mesh mesh-1" style="opacity: .16;"></div>
-      <div class="container container-narrow" style="text-align: center; position: relative; z-index: 2;" data-reveal>
-        <span class="eyebrow centered" style="margin-bottom: var(--spacing-3);">Enterprise Accounts</span>
-        <h2 style="margin-bottom: var(--spacing-3);">Ready to optimize your <span class="serif">supply chain?</span></h2>
-        <p class="lead" style="color: rgba(255,255,255,.72); margin-bottom: var(--spacing-5);">
-          Set up a corporate account today for custom volume pricing tiers, Net-30 credit terms, and dedicated freight schedules.
+    <!-- ==================== 7. ENROLLMENT FORM & 6. GOOGLE MAPS EMBED PLACEHOLDER ==================== -->
+    <section class="section-padding section-ivory-alt" id="enrollment-form">
+      <div class="container">
+        <div class="row g-5 align-items-start">
+          <!-- Left Column: Enrollment Form -->
+          <div class="col-lg-7 reveal-up">
+            <div class="enrollment-form-card">
+              <div class="eyebrow-badge">
+                <i class="bi bi-journal-check"></i>
+                <span>7. Course Enrollment &amp; Inquiry Form</span>
+              </div>
+              <h2 class="h3 mb-2">
+                Submit Your <span class="highlight-italic">Course &amp; Batch Preference</span>
+              </h2>
+              <p class="small mb-4">
+                Complete the fields below to register your interest. Fields marked with <span
+                  class="required-star">*</span> are mandatory. This front-end validated form is ready for future
+                backend API or WhatsApp admissions integration.
+              </p>
+
+              <form id="ttcEnrollmentForm" novalidate>
+                <div class="row g-3">
+                  <!-- Full Name -->
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label-ttc">
+                      Full Name <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <input type="text" id="fullName" name="fullName" class="form-control-ttc"
+                      placeholder="Enter your full name" required aria-required="true" aria-describedby="fullNameError">
+                    <div id="fullNameError" class="field-error-msg" role="alert">
+                      Please enter your full name (at least 2 characters).
+                    </div>
+                  </div>
+
+                  <!-- Mobile Number -->
+                  <div class="col-md-6">
+                    <label for="mobileNumber" class="form-label-ttc">
+                      Mobile Number <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <input type="tel" id="mobileNumber" name="mobileNumber" class="form-control-ttc"
+                      placeholder="e.g., +91 98765 43210" required aria-required="true"
+                      aria-describedby="mobileNumberError">
+                    <div id="mobileNumberError" class="field-error-msg" role="alert">
+                      Please enter a valid 10 to 15 digit mobile number.
+                    </div>
+                  </div>
+
+                  <!-- Email Address -->
+                  <div class="col-md-12">
+                    <label for="emailAddress" class="form-label-ttc">
+                      Email Address <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <input type="email" id="emailAddress" name="emailAddress" class="form-control-ttc"
+                      placeholder="yourname@example.com" required aria-required="true"
+                      aria-describedby="emailAddressError">
+                    <div id="emailAddressError" class="field-error-msg" role="alert">
+                      Please enter a valid email address.
+                    </div>
+                  </div>
+
+                  <!-- Preferred Course -->
+                  <div class="col-md-6">
+                    <label for="preferredCourse" class="form-label-ttc">
+                      Preferred Course <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <select id="preferredCourse" name="preferredCourse" class="form-select-ttc" required
+                      aria-required="true" aria-describedby="preferredCourseError">
+                      <option value="">-- Select a Training Course --</option>
+                      <option value="Basic Tailoring Course">1. Basic Tailoring Course</option>
+                      <option value="Advanced Tailoring Course">2. Advanced Tailoring Course</option>
+                      <option value="Blouse Stitching Course">3. Blouse Stitching Course</option>
+                      <option value="Chudidhar Stitching Course">4. Chudidhar Stitching Course</option>
+                      <option value="Aari Embroidery Course">5. Aari Embroidery Course</option>
+                      <option value="Pattern Making Course">6. Pattern Making Course</option>
+                      <option value="Fashion Designing Basics">7. Fashion Designing Basics</option>
+                      <option value="Professional Garment Making">8. Professional Garment Making</option>
+                    </select>
+                    <div id="preferredCourseError" class="field-error-msg" role="alert">
+                      Please select your preferred training course.
+                    </div>
+                  </div>
+
+                  <!-- Preferred Batch Timing -->
+                  <div class="col-md-6">
+                    <label for="preferredBatch" class="form-label-ttc">
+                      Preferred Batch Timing <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <select id="preferredBatch" name="preferredBatch" class="form-select-ttc" required
+                      aria-required="true" aria-describedby="preferredBatchError">
+                      <option value="">-- Select Preferred Batch --</option>
+                      <option value="Morning Batch">Morning Batch</option>
+                      <option value="Afternoon Batch">Afternoon Batch</option>
+                      <option value="Evening Batch">Evening Batch</option>
+                      <option value="Weekend Batch">Weekend Batch</option>
+                      <option value="Flexible / Need Guidance">Flexible / Need Counseling Guidance</option>
+                    </select>
+                    <div id="preferredBatchError" class="field-error-msg" role="alert">
+                      Please select your preferred batch timing.
+                    </div>
+                  </div>
+
+                  <!-- Previous Tailoring Experience -->
+                  <div class="col-md-12">
+                    <label for="tailoringExperience" class="form-label-ttc">
+                      Previous Tailoring Experience <span class="required-star" aria-hidden="true">*</span>
+                    </label>
+                    <select id="tailoringExperience" name="tailoringExperience" class="form-select-ttc" required
+                      aria-required="true" aria-describedby="tailoringExperienceError">
+                      <option value="">-- Select Your Experience Level --</option>
+                      <option value="Complete Beginner (Never used a sewing machine)">Complete Beginner (Never used a
+                        sewing machine)</option>
+                      <option value="Know Basic Machine Operation / Straight Stitching">Know Basic Machine Operation /
+                        Straight Stitching</option>
+                      <option value="Can Stitch Simple Garments, Want Perfect Fitting">Can Stitch Simple Garments, Want
+                        Perfect Fitting</option>
+                      <option value="Experienced Stitcher Looking for Bridal / Aari Upgrade">Experienced Stitcher
+                        Looking for Bridal / Aari Upgrade</option>
+                    </select>
+                    <div id="tailoringExperienceError" class="field-error-msg" role="alert">
+                      Please select your current tailoring experience level.
+                    </div>
+                  </div>
+
+                  <!-- Additional Message -->
+                  <div class="col-md-12">
+                    <label for="additionalMessage" class="form-label-ttc">
+                      Additional Message or Specific Garment Goals (Optional)
+                    </label>
+                    <textarea id="additionalMessage" name="additionalMessage" rows="4" class="form-control-ttc"
+                      placeholder="Tell us about your goals (e.g., learning silk saree blouses, starting a home boutique, preferred days)..."></textarea>
+                  </div>
+
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn-ttc-primary w-100">
+                      <i class="bi bi-send-check"></i>
+                      <span>Submit Enrollment Inquiry</span>
+                    </button>
+                  </div>
+                </div>
+
+                <!-- Dynamic Validation / Confirmation Banner -->
+                <div id="formFeedbackBanner" class="form-feedback-banner" role="status" aria-live="polite"></div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Right Column: 6. Google Maps Embed Placeholder & Studio Visit Info -->
+          <div class="col-lg-5 reveal-up">
+            <div class="map-placeholder-box mb-4">
+              <div class="card-icon-badge mx-auto mb-3"><i class="bi bi-map"></i></div>
+              <span class="eyebrow-badge">
+                <i class="bi bi-geo-fill"></i>
+                <span>6. Google Maps Embed Placeholder</span>
+              </span>
+              <h3 class="h4 mb-2">Interactive Location Map Area</h3>
+              <p class="small mb-3">
+                Replace this container with your official Google Maps `<iframe>` embed code once the physical institute
+                  coordinates are finalized.
+              </p>
+              <div class="p-3 rounded bg-white border text-start small">
+                <strong class="d-block text-primary mb-1"><i class="bi bi-code-slash me-1"></i>Developer / Admin
+                  Note:</strong>
+                <span class="text-muted">Insert `<iframe src="https://www.google.com/maps/embed?pb=..." width="100%"
+                    height="260" loading="lazy"></iframe>` here.</span>
+              </div>
+            </div>
+
+            <div class="editorial-card">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=300&q=85"
+                  alt="Admissions counselor and tailoring mentor"
+                  style="width: 64px; height: 64px; border-radius: 50%; object-fit: cover; border: 2px solid var(--accent);">
+                <div>
+                  <h3 class="h5 mb-1">Free In-Studio Counseling</h3>
+                  <p class="small text-primary fw-semibold mb-0">Meet Our Women Faculty Before Enrolling</p>
+                </div>
+              </div>
+              <p class="small mb-3">
+                Not sure whether to begin with Basic Tailoring, Blouse Stitching, or Aari Embroidery? Visit our center
+                to
+                see student draft books and discuss a learning path tailored to your pace.
+              </p>
+              <ul class="list-unstyled small mb-0 d-flex flex-column gap-2">
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  <span>Inspect sewing machine &amp; Aari cot stations</span>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  <span>Review real student pattern-drafting notebooks</span>
+                </li>
+                <li class="d-flex align-items-center gap-2">
+                  <i class="bi bi-check-circle-fill text-primary"></i>
+                  <span>Get a clear list of beginner sewing tools needed</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. FREQUENTLY ASKED QUESTIONS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-question-circle"></i>
+            <span>8. Admissions FAQs</span>
+          </div>
+          <h2 class="section-title">
+            Frequently Asked <span class="highlight-italic">Enrollment Questions</span>
+          </h2>
+        </div>
+
+        <div class="row justify-content-center reveal-up">
+          <div class="col-lg-9">
+            <div class="accordion ttc-accordion" id="contactFaqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="ctFaqHead1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ctFaqCollapse1" aria-expanded="true" aria-controls="ctFaqCollapse1">
+                    Can I visit the training center with my family before enrolling?
+                  </button>
+                </h3>
+                <div id="ctFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="ctFaqHead1"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    Yes, you and your family members are most welcome to visit our studio during working hours, view our
+                    classroom setup, and speak with our women instructors before confirming your admission.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="ctFaqHead2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ctFaqCollapse2" aria-expanded="false" aria-controls="ctFaqCollapse2">
+                    What items do I need to bring on my first day of training?
+                  </button>
+                </h3>
+                <div id="ctFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="ctFaqHead2"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    On your first day, you only need a standard notebook, pen, pencil, scale, and measuring tape. Our
+                    faculty will guide you on selecting brown drafting paper, fabric shears, and cotton practice cloth
+                    as
+                    you progress.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="ctFaqHead3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#ctFaqCollapse3" aria-expanded="false" aria-controls="ctFaqCollapse3">
+                    Is there an age limit to join the tailoring or Aari embroidery courses?
+                  </button>
+                </h3>
+                <div id="ctFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="ctFaqHead3"
+                  data-bs-parent="#contactFaqAccordion">
+                  <div class="accordion-body">
+                    There is no upper age limit! We train college students, young brides-to-be, homemakers, and senior
+                    learners alike—anyone with enthusiasm to learn stitching and garment making is welcome.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. FINAL CTA ==================== -->
+    <section class="section-padding section-burgundy">
+      <div class="container text-center reveal-up">
+        <div class="eyebrow-badge eyebrow-badge-light">
+          <i class="bi bi-scissors"></i>
+          <span>9. Craft Your Future in Fashion</span>
+        </div>
+        <h2 class="section-title mb-3" style="max-width: 720px; margin-inline: auto;">
+          Every Master Tailor Started With <span class="highlight-italic">One Simple Stitch</span>
+        </h2>
+        <p class="mx-auto mb-4" style="max-width: 620px;">
+          Explore our student works or review our batch schedule while you prepare for your first practical studio day.
         </p>
-        <div class="cta-actions">
-          <a href="doctors.html" class="btn btn-light btn-lg">Request Volume Quote <i class="ph ph-arrow-right"></i></a>
-          <a href="tel:8005550199" class="btn btn-on-deep btn-lg"><i class="ph ph-phone"></i> (800) 555-0199</a>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="#enrollment-form" class="btn-ttc-gold">
+            <i class="bi bi-arrow-up-circle"></i>
+            <span>Complete Enrollment Form Above</span>
+          </a>
+          <a href="gallery.html" class="btn-ttc-outline-light">
+            <i class="bi bi-images"></i>
+            <span>View Student Works Gallery</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
-  <!-- Footer -->
-  <footer class="footer">
+  <!-- ==================== CONSISTENT PREMIUM FOOTER ==================== -->
+  <footer class="site-footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <a href="index.html" class="logo" style="margin-bottom: var(--spacing-3);">
-            <img src="assets/images/logo.png" class="logo-mark" alt="ChemDist Pro Logo">
-            <span class="logo-text">ChemDist <span class="logo-accent">Pro</span></span>
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-emblem">
+              <i class="bi bi-scissors"></i>
+            </span>
+            <span class="brand-text-wrap">
+              <span class="footer-brand-title">Velora</span>
+              </span>
           </a>
-          <p>Premier B2B distributor of industrial cleaning chemicals, heavy solvents, sanitizers, and facility supplies.</p>
-          <div class="social-links">
-            <a href="#" aria-label="Facebook"><i class="ph-fill ph-facebook-logo"></i></a>
-            <a href="#" aria-label="X"><i class="ph-fill ph-x-logo"></i></a>
-            <a href="#" aria-label="LinkedIn"><i class="ph-fill ph-linkedin-logo"></i></a>
+          <p class="small mb-3" style="color: rgba(250, 247, 242, 0.78);">
+            Empowering beginners, homemakers, students, and women entrepreneurs with 100% practical training in sewing
+            machine operation, blouse designing, chudidhar construction, pattern drafting, and Aari embroidery.
+          </p>
+          <div class="footer-social-links" aria-label="Social Media Links">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="WhatsApp Inquiry"><i
+                class="bi bi-whatsapp"></i></a>
           </div>
         </div>
 
-        <div class="footer-col">
-          <h4>Catalog</h4>
-          <div class="footer-links">
-            <a href="services.html#degreasers">Solvents &amp; Degreasers</a>
-            <a href="services.html#sanitizers">EPA Disinfectants</a>
-            <a href="services.html#floorcare">Floor Care &amp; Coatings</a>
-            <a href="doctors.html">Bulk Ordering</a>
-          </div>
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Institute</a></li>
+            <li><a href="courses.html"><i class="bi bi-chevron-right small"></i> Training Courses</a></li>
+            <li><a href="batch-timings.html"><i class="bi bi-chevron-right small"></i> Batch Timings</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Enroll</a></li>
+          </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Company</h4>
-          <div class="footer-links">
-            <a href="about.html">About ChemDist Pro</a>
-            <a href="doctors.html">Ordering &amp; Logistics</a>
-            <a href="blog.html">SDS Library</a>
-            <a href="contact.html">Contact Sales</a>
-            <a href="dashboard.html">Client Dashboard</a>
-          </div>
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer-heading">Our Courses</h3>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#basic-tailoring"><i class="bi bi-chevron-right small"></i> Basic Tailoring
+                Course</a></li>
+            <li><a href="courses.html#advanced-tailoring"><i class="bi bi-chevron-right small"></i> Advanced Tailoring
+                Course</a></li>
+            <li><a href="courses.html#blouse-stitching"><i class="bi bi-chevron-right small"></i> Blouse Stitching
+                Course</a></li>
+            <li><a href="courses.html#chudidhar-stitching"><i class="bi bi-chevron-right small"></i> Chudidhar Stitching
+                Course</a></li>
+            <li><a href="courses.html#aari-embroidery"><i class="bi bi-chevron-right small"></i> Aari Embroidery
+                Course</a></li>
+            <li><a href="courses.html#pattern-making"><i class="bi bi-chevron-right small"></i> Pattern Making
+                Course</a></li>
+          </ul>
         </div>
 
-        <div class="footer-col">
-          <h4>Contact</h4>
-          <div class="footer-links">
-            <a href="contact.html"><i class="ph ph-map-pin"></i> 850 Industrial Parkway, Building<br>Supply Hub, OH 44101</a>
-            <a href="tel:8005550199"><i class="ph ph-phone"></i> (800) 555-0199</a>
-            <a href="mailto:orders@chemdistpro.com"><i class="ph ph-envelope"></i> orders@chemdistpro.com</a>
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contact Information</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>[Institute Address Placeholder: Street, Landmark, City &amp; PIN Code]</span>
           </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>[Phone Placeholder: +91 XXXXX XXXXX]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>[Email Placeholder: admissions@velora.example]</span>
+          </div>
+          <div class="footer-contact-item mb-3">
+            <i class="bi bi-clock"></i>
+            <span>[Working Hours Placeholder: Mon – Sat, Morning to Evening Sessions]</span>
+          </div>
+          <a href="#enrollment-form" class="btn-ttc-gold btn-sm-ttc w-100">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll in Next Batch</span>
+          </a>
         </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 ChemDist Pro Supplies Inc. All rights reserved.</p>
-        <nav>
-          <a href="#">Privacy</a>
-          <a href="#">Terms of Sale</a>
-          <a href="#">OSHA Compliance</a>
-        </nav>
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <span>&copy; 2026 Velora. All Rights Reserved.</span>
+        <span>Crafted with precision for aspiring garment makers &amp; fashion creators.</span>
       </div>
     </div>
   </footer>
 
-  <button class="back-to-top" type="button" aria-label="Back to top"><i class="ph ph-arrow-up" aria-hidden="true"></i></button>
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
 
+  <!-- Bootstrap 5 JS Bundle & Custom Main Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

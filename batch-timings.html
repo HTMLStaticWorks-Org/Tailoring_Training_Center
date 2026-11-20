@@ -1,0 +1,773 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Batch Timings &amp; Training Schedule | Velora</title>
+  <meta name="description"
+    content="Explore morning, afternoon, evening, and weekend tailoring training batches designed for homemakers, college students, and working professionals.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+  <!-- Google Fonts: Playfair Display & DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5.3 CSS & Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+  <!-- Decorative Top Running Stitch Bar -->
+  <div class="animated-stitch-bar" aria-hidden="true"></div>
+
+  <!-- ==================== CONSISTENT PREMIUM HEADER ==================== -->
+  <header class="site-header" id="topHeader">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="brand-logo" aria-label="Velora Home">
+          <span class="brand-emblem" aria-hidden="true">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary Navigation">
+          <a href="index.html" class="nav-item-link">Home</a>
+          <a href="home2.html" class="nav-item-link">Home 2</a>
+          <a href="about.html" class="nav-item-link">About</a>
+          <a href="courses.html" class="nav-item-link">Courses</a>
+          <a href="batch-timings.html" class="nav-item-link active" aria-current="page">Batch Timings</a>
+          <a href="gallery.html" class="nav-item-link">Gallery</a>
+          <a href="contact.html" class="nav-item-link">Contact</a>
+        </nav>
+
+        <div class="header-cta-group">
+          <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout"
+            title="Toggle RTL / LTR">
+            <i class="bi bi-arrow-left-right"></i>
+            <span class="utility-btn-label">RTL</span>
+          </button>
+          <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme"
+            title="Toggle Theme">
+            <i class="bi bi-moon-stars"></i>
+          </button>
+          <a href="contact.html#enrollment-form" class="btn-ttc-primary btn-sm-ttc header-cta-desktop">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll Now</span>
+          </a>
+          <button type="button" class="mobile-menu-toggle" aria-label="Open Navigation Menu" aria-expanded="false"
+            aria-controls="mobileNavDrawer">
+            <i class="bi bi-list"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true" aria-label="Mobile Navigation">
+    <div>
+      <div class="mobile-drawer-header">
+        <a href="index.html" class="brand-logo">
+          <span class="brand-emblem">
+            <i class="bi bi-scissors"></i>
+          </span>
+          <span class="brand-text-wrap">
+            <span class="brand-title">Velora</span>
+            </span>
+        </a>
+        <button type="button" class="mobile-drawer-close" aria-label="Close Navigation Menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+
+      <ul class="mobile-drawer-links">
+        <li><a href="index.html" class="mobile-drawer-link"><span>Home</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="home2.html" class="mobile-drawer-link"><span>Home 2 (Atelier View)</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="about.html" class="mobile-drawer-link"><span>About Our Institute</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="courses.html" class="mobile-drawer-link"><span>Training Courses</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="batch-timings.html" class="mobile-drawer-link active"><span>Batch Timings</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="gallery.html" class="mobile-drawer-link"><span>Student Works Gallery</span><i class="bi bi-chevron-right"></i></a></li>
+        <li><a href="contact.html" class="mobile-drawer-link"><span>Contact &amp; Enrollment</span><i class="bi bi-chevron-right"></i></a></li>
+      </ul>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <div class="drawer-utility-bar">
+        <button type="button" class="header-utility-btn rtl-toggle-btn" aria-label="Toggle RTL Layout">
+          <i class="bi bi-arrow-left-right"></i>
+          <span class="utility-btn-label">RTL</span>
+        </button>
+        <button type="button" class="header-utility-btn theme-toggle-btn" aria-label="Toggle Dark or Light Theme">
+          <i class="bi bi-moon-stars"></i>
+          <span class="utility-btn-label">Theme</span>
+        </button>
+      </div>
+      <p class="small mb-3">Ready to begin your hands-on stitching and garment design journey?</p>
+      <a href="contact.html#enrollment-form" class="btn-ttc-primary w-100">
+        <i class="bi bi-journal-check"></i>
+        <span>Enroll Now</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <!-- ==================== BATCH TIMINGS HERO ==================== -->
+    <section class="page-hero hero-dark">
+      <img class="page-hero-bg"
+        src="https://images.unsplash.com/photo-1605289355680-75fb41239154?auto=format&fit=crop&w=1400&q=85"
+        alt="Student practicing sewing machine stitching during a scheduled training batch">
+      <div class="page-hero-pattern" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="page-hero-content reveal-up">
+          <div class="eyebrow-badge eyebrow-badge-light">
+            <i class="bi bi-calendar2-week"></i>
+            <span>Convenient Studio Sessions</span>
+          </div>
+          <h1>
+            Find the Right Training Time <span class="highlight-italic">for Your Schedule.</span>
+          </h1>
+          <p>
+            Whether you are a homemaker, college student, working professional, or aspiring entrepreneur, we offer
+            structured weekday and weekend sessions with individual sewing machine access.
+          </p>
+          <div class="breadcrumb-pill">
+            <a href="index.html">Home</a>
+            <span>/</span>
+            <span>Batch Timings</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 1. AVAILABLE TRAINING BATCHES (CARDS 2-5) ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-clock-history"></i>
+            <span>1. Available Training Batches</span>
+          </div>
+          <h2 class="section-title">
+            Four Dedicated <span class="highlight-italic">Daily &amp; Weekend Sessions</span>
+          </h2>
+          <div class="stitch-divider" aria-hidden="true">
+            <span class="stitch-line"></span>
+            <span class="stitch-icon"><i class="bi bi-scissors"></i></span>
+            <span class="stitch-line"></span>
+          </div>
+          <p>
+            To ensure every learner gets a dedicated sewing machine and cutting table space, batch seats are allocated
+            upon direct confirmation with our admissions desk. All timings, dates, and seat counts below use editable
+            placeholders.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 2. Morning Batch -->
+          <div class="col-md-6 reveal-up" id="morning-batch">
+            <div class="batch-card">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="card-icon-badge mb-0"><i class="bi bi-sunrise"></i></span>
+                  <div>
+                    <span class="small text-primary fw-semibold text-uppercase">Session 01</span>
+                    <h3 class="h4 mb-0">Morning Batch</h3>
+                  </div>
+                </div>
+                <span class="placeholder-slot"><i class="bi bi-clock"></i> [Morning Time Slot Placeholder]</span>
+              </div>
+
+              <p>
+                Ideal for homemakers, mothers after school drop-off, and early-rising learners who prefer quiet morning
+                hours for pattern drafting, blouse cutting, and machine practice.
+              </p>
+
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Training Days</span>
+                    <strong class="small text-dark">[Days Placeholder: e.g., Mon – Fri]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Next Batch Start Date</span>
+                    <strong class="small text-dark">[Batch Date Placeholder]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Seat Allocation Status</span>
+                    <strong class="small text-dark">[Seats Placeholder: Confirm via Desk]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Courses Supported</span>
+                    <strong class="small text-dark">All 8 Tailoring &amp; Aari Modules</strong>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html?batch=Morning%20Batch#enrollment-form" class="btn-ttc-primary w-100">
+                <i class="bi bi-calendar-check"></i>
+                <span>Inquire for Morning Batch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 3. Afternoon Batch -->
+          <div class="col-md-6 reveal-up" id="afternoon-batch">
+            <div class="batch-card">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="card-icon-badge mb-0"><i class="bi bi-sun"></i></span>
+                  <div>
+                    <span class="small text-primary fw-semibold text-uppercase">Session 02</span>
+                    <h3 class="h4 mb-0">Afternoon Batch</h3>
+                  </div>
+                </div>
+                <span class="placeholder-slot"><i class="bi bi-clock"></i> [Afternoon Time Slot Placeholder]</span>
+              </div>
+
+              <p>
+                A relaxed midday window suited for women who have completed their morning household routines and want
+                unhurried, focused practice on saree blouses, chudidhars, and Aari embroidery frames.
+              </p>
+
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Training Days</span>
+                    <strong class="small text-dark">[Days Placeholder: e.g., Mon – Fri]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Next Batch Start Date</span>
+                    <strong class="small text-dark">[Batch Date Placeholder]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Seat Allocation Status</span>
+                    <strong class="small text-dark">[Seats Placeholder: Confirm via Desk]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Courses Supported</span>
+                    <strong class="small text-dark">All 8 Tailoring &amp; Aari Modules</strong>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html?batch=Afternoon%20Batch#enrollment-form" class="btn-ttc-primary w-100">
+                <i class="bi bi-calendar-check"></i>
+                <span>Inquire for Afternoon Batch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Evening Batch -->
+          <div class="col-md-6 reveal-up" id="evening-batch">
+            <div class="batch-card">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="card-icon-badge mb-0"><i class="bi bi-sunset"></i></span>
+                  <div>
+                    <span class="small text-primary fw-semibold text-uppercase">Session 03</span>
+                    <h3 class="h4 mb-0">Evening Batch</h3>
+                  </div>
+                </div>
+                <span class="placeholder-slot"><i class="bi bi-clock"></i> [Evening Time Slot Placeholder]</span>
+              </div>
+
+              <p>
+                Specially structured for college students, young graduates, and working women looking to build practical
+                dressmaking, pattern drafting, or fashion designing skills after college or office hours.
+              </p>
+
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Training Days</span>
+                    <strong class="small text-dark">[Days Placeholder: e.g., Mon – Fri]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Next Batch Start Date</span>
+                    <strong class="small text-dark">[Batch Date Placeholder]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Seat Allocation Status</span>
+                    <strong class="small text-dark">[Seats Placeholder: Confirm via Desk]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Courses Supported</span>
+                    <strong class="small text-dark">All 8 Tailoring &amp; Aari Modules</strong>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html?batch=Evening%20Batch#enrollment-form" class="btn-ttc-primary w-100">
+                <i class="bi bi-calendar-check"></i>
+                <span>Inquire for Evening Batch</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 5. Weekend Batch -->
+          <div class="col-md-6 reveal-up" id="weekend-batch">
+            <div class="batch-card">
+              <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+                <div class="d-flex align-items-center gap-3">
+                  <span class="card-icon-badge mb-0"><i class="bi bi-calendar2-heart"></i></span>
+                  <div>
+                    <span class="small text-primary fw-semibold text-uppercase">Session 04</span>
+                    <h3 class="h4 mb-0">Weekend Batch</h3>
+                  </div>
+                </div>
+                <span class="placeholder-slot"><i class="bi bi-clock"></i> [Weekend Time Slot Placeholder]</span>
+              </div>
+
+              <p>
+                Extended practical studio sessions for full-time working professionals and out-of-neighborhood learners
+                who prefer intensive hands-on pattern cutting and machine sewing on weekends.
+              </p>
+
+              <div class="row g-2 mb-4">
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Training Days</span>
+                    <strong class="small text-dark">[Days Placeholder: Saturday / Sunday]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Next Batch Start Date</span>
+                    <strong class="small text-dark">[Batch Date Placeholder]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Seat Allocation Status</span>
+                    <strong class="small text-dark">[Seats Placeholder: Confirm via Desk]</strong>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="p-2 rounded bg-light border">
+                    <span class="d-block small text-muted">Courses Supported</span>
+                    <strong class="small text-dark">Blouse, Chudidhar, Aari &amp; Basic</strong>
+                  </div>
+                </div>
+              </div>
+
+              <a href="contact.html?batch=Weekend%20Batch#enrollment-form" class="btn-ttc-primary w-100">
+                <i class="bi bi-calendar-check"></i>
+                <span>Inquire for Weekend Batch</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== RESPONSIVE BATCH TIMETABLE OVERVIEW ==================== -->
+    <section class="section-padding section-ivory-alt">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-table"></i>
+            <span>Master Schedule Matrix</span>
+          </div>
+          <h2 class="section-title">
+            Weekly Training <span class="highlight-italic">Timetable Overview</span>
+          </h2>
+          <p>
+            Review our structured session matrix below. Exact slot hours, upcoming start dates, and available machine
+            stations are confirmed directly with each learner prior to enrollment.
+          </p>
+        </div>
+
+        <div class="table-editorial-wrap table-responsive reveal-up">
+          <table class="table-editorial" aria-label="Training Batch Schedule Table">
+            <thead>
+              <tr>
+                <th scope="col">Batch Category</th>
+                <th scope="col">Session Days Placeholder</th>
+                <th scope="col">Timing Slot Placeholder</th>
+                <th scope="col">Best Suited For</th>
+                <th scope="col">Seat &amp; Machine Status</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Morning Batch</strong></td>
+                <td><span class="placeholder-slot">[Days Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Morning Hours Placeholder]</span></td>
+                <td>Homemakers, Beginners, Full Garment Modules</td>
+                <td><span class="placeholder-slot">[Confirm Seat Availability]</span></td>
+                <td><a href="contact.html?batch=Morning%20Batch#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Request Slot</a></td>
+              </tr>
+              <tr>
+                <td><strong>Afternoon Batch</strong></td>
+                <td><span class="placeholder-slot">[Days Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Afternoon Hours Placeholder]</span></td>
+                <td>Homemakers, Blouse &amp; Aari Embroidery Learners</td>
+                <td><span class="placeholder-slot">[Confirm Seat Availability]</span></td>
+                <td><a href="contact.html?batch=Afternoon%20Batch#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Request Slot</a></td>
+              </tr>
+              <tr>
+                <td><strong>Evening Batch</strong></td>
+                <td><span class="placeholder-slot">[Days Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Evening Hours Placeholder]</span></td>
+                <td>College Students, Young Designers, Working Women</td>
+                <td><span class="placeholder-slot">[Confirm Seat Availability]</span></td>
+                <td><a href="contact.html?batch=Evening%20Batch#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Request Slot</a></td>
+              </tr>
+              <tr>
+                <td><strong>Weekend Batch</strong></td>
+                <td><span class="placeholder-slot">[Weekend Days Placeholder]</span></td>
+                <td><span class="placeholder-slot">[Weekend Hours Placeholder]</span></td>
+                <td>Working Professionals &amp; Intensive Practice</td>
+                <td><span class="placeholder-slot">[Confirm Seat Availability]</span></td>
+                <td><a href="contact.html?batch=Weekend%20Batch#enrollment-form" class="btn-ttc-primary btn-sm-ttc">Request Slot</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. FLEXIBLE LEARNING OPTIONS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6 reveal-up">
+            <div class="stitch-frame">
+              <img
+                src="https://images.unsplash.com/photo-1556905055-8f358a7a47b2?auto=format&fit=crop&w=1000&q=85"
+                alt="Tailoring workbench prepared for flexible student learning sessions"
+                loading="lazy">
+            </div>
+          </div>
+
+          <div class="col-lg-6 reveal-up">
+            <div class="eyebrow-badge">
+              <i class="bi bi-arrows-angle-expand"></i>
+              <span>6. Flexible Learning Options</span>
+            </div>
+            <h2 class="section-title mb-3">
+              Designed Around Your <span class="highlight-italic">Family &amp; Work Commitments</span>
+            </h2>
+            <p>
+              We understand that homemakers, mothers, and students occasionally face unexpected family events or exam
+              schedules. Our training structure focuses on milestone completion rather than rigid lecture attendance.
+            </p>
+
+            <div class="d-flex flex-column gap-3 mt-4">
+              <div class="skill-swatch-card">
+                <span class="skill-swatch-icon"><i class="bi bi-arrow-repeat"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Missed-Session Makeup Support</h3>
+                  <p class="small mb-0">
+                    If you miss a cutting or stitching day with prior notice, our trainers help you catch up on that
+                    exact garment step in your next session.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-swatch-card">
+                <span class="skill-swatch-icon"><i class="bi bi-speedometer2"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Self-Paced Practical Progression</h3>
+                  <p class="small mb-0">
+                    Move to the next pattern block only after you feel confident with your current seam quality and
+                    fitting accuracy.
+                  </p>
+                </div>
+              </div>
+
+              <div class="skill-swatch-card">
+                <span class="skill-swatch-icon"><i class="bi bi-shuffle"></i></span>
+                <div>
+                  <h3 class="h6 mb-1">Batch Transfer Assistance</h3>
+                  <p class="small mb-0">
+                    Need to switch from a morning slot to an afternoon or weekend slot due to schedule changes? Coordinate
+                    with our desk to transfer smoothly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. BATCH SELECTION INFORMATION ==================== -->
+    <section class="section-padding section-ivory-alt">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-info-circle"></i>
+            <span>7. How to Choose Your Batch</span>
+          </div>
+          <h2 class="section-title">
+            Batch Selection <span class="highlight-italic">&amp; Machine Allocation Process</span>
+          </h2>
+          <p>
+            Follow these simple steps to confirm your training slot and reserve your sewing machine station.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card">
+              <span class="step-number-badge">01</span>
+              <h3>Select Your Course &amp; Time Window</h3>
+              <p class="small mb-0">
+                Choose from our 8 specialized tailoring or embroidery courses and identify whether Morning, Afternoon,
+                Evening, or Weekend suits your routine.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card">
+              <span class="step-number-badge">02</span>
+              <h3>Verify Current Machine Seat Status</h3>
+              <p class="small mb-0">
+                Because each student practices on an individual sewing machine or Aari cot frame, contact our admissions
+                desk to verify real-time seat availability for your preferred slot.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-4 reveal-up">
+            <div class="editorial-card">
+              <span class="step-number-badge">03</span>
+              <h3>Receive Your Starter Material Checklist</h3>
+              <p class="small mb-0">
+                Once your batch date is confirmed, our trainers provide a simple checklist of drafting paper, measuring
+                tape, thread spools, and cotton practice cloth for Day 1.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. FREQUENTLY ASKED QUESTIONS ==================== -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header reveal-up">
+          <div class="eyebrow-badge">
+            <i class="bi bi-question-circle"></i>
+            <span>8. Schedule FAQs</span>
+          </div>
+          <h2 class="section-title">
+            Frequently Asked <span class="highlight-italic">Batch Timing Questions</span>
+          </h2>
+        </div>
+
+        <div class="row justify-content-center reveal-up">
+          <div class="col-lg-9">
+            <div class="accordion ttc-accordion" id="batchFaqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="bFaqHead1">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#bFaqCollapse1" aria-expanded="true" aria-controls="bFaqCollapse1">
+                    How do I confirm if a batch has an available sewing machine seat?
+                  </button>
+                </h3>
+                <div id="bFaqCollapse1" class="accordion-collapse collapse show" aria-labelledby="bFaqHead1"
+                  data-bs-parent="#batchFaqAccordion">
+                  <div class="accordion-body">
+                    We never display automated or unverified seat counts online because every student is assigned a
+                    dedicated machine or embroidery stand. Submit an inquiry via our
+                    <a href="contact.html#enrollment-form">Enrollment Form</a> or call our center directly to confirm
+                    current seat availability for your preferred time slot.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="bFaqHead2">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#bFaqCollapse2" aria-expanded="false" aria-controls="bFaqCollapse2">
+                    Can I switch my batch timing later if my daily routine changes?
+                  </button>
+                </h3>
+                <div id="bFaqCollapse2" class="accordion-collapse collapse" aria-labelledby="bFaqHead2"
+                  data-bs-parent="#batchFaqAccordion">
+                  <div class="accordion-body">
+                    Yes. Since each learner works from her personal pattern drafting record book, you can request a
+                    transfer to another batch slot (subject to machine seat confirmation in that slot) without losing
+                    your curriculum progress.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header" id="bFaqHead3">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#bFaqCollapse3" aria-expanded="false" aria-controls="bFaqCollapse3">
+                    Are weekend batches practical enough for complete beginners?
+                  </button>
+                </h3>
+                <div id="bFaqCollapse3" class="accordion-collapse collapse" aria-labelledby="bFaqHead3"
+                  data-bs-parent="#batchFaqAccordion">
+                  <div class="accordion-body">
+                    Absolutely. Weekend sessions provide focused studio hours where working women and students receive
+                    the same step-by-step measurement, paper drafting, fabric cutting, and machine stitching supervision
+                    as weekday learners.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 9. ENROLLMENT CTA ==================== -->
+    <section class="section-padding section-burgundy">
+      <div class="container text-center reveal-up">
+        <div class="eyebrow-badge eyebrow-badge-light">
+          <i class="bi bi-calendar-check"></i>
+          <span>Reserve Your Preferred Time Window</span>
+        </div>
+        <h2 class="section-title mb-3" style="max-width: 720px; margin-inline: auto;">
+          Ready to Confirm Your <span class="highlight-italic">Training Batch Schedule?</span>
+        </h2>
+        <p class="mx-auto mb-4" style="max-width: 620px;">
+          Send us your preferred course and time slot, and our admissions team will guide you through upcoming batch
+          start dates.
+        </p>
+        <div class="d-flex flex-wrap justify-content-center gap-3">
+          <a href="contact.html#enrollment-form" class="btn-ttc-gold">
+            <i class="bi bi-journal-check"></i>
+            <span>Inquire About Batch Timings</span>
+          </a>
+          <a href="courses.html" class="btn-ttc-outline-light">
+            <i class="bi bi-scissors"></i>
+            <span>Compare All 8 Courses</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== CONSISTENT PREMIUM FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <a href="index.html" class="brand-logo mb-3">
+            <span class="brand-emblem">
+              <i class="bi bi-scissors"></i>
+            </span>
+            <span class="brand-text-wrap">
+              <span class="footer-brand-title">Velora</span>
+              </span>
+          </a>
+          <p class="small mb-3" style="color: rgba(250, 247, 242, 0.78);">
+            Empowering beginners, homemakers, students, and women entrepreneurs with 100% practical training in sewing
+            machine operation, blouse designing, chudidhar construction, pattern drafting, and Aari embroidery.
+          </p>
+          <div class="footer-social-links" aria-label="Social Media Links">
+            <a href="contact.html" class="footer-social-btn" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a>
+            <a href="contact.html" class="footer-social-btn" aria-label="WhatsApp Inquiry"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-heading">Quick Links</h3>
+          <ul class="footer-links-list">
+            <li><a href="index.html"><i class="bi bi-chevron-right small"></i> Home</a></li>
+            <li><a href="about.html"><i class="bi bi-chevron-right small"></i> About Institute</a></li>
+            <li><a href="courses.html"><i class="bi bi-chevron-right small"></i> Training Courses</a></li>
+            <li><a href="batch-timings.html"><i class="bi bi-chevron-right small"></i> Batch Timings</a></li>
+            <li><a href="gallery.html"><i class="bi bi-chevron-right small"></i> Student Gallery</a></li>
+            <li><a href="contact.html"><i class="bi bi-chevron-right small"></i> Contact &amp; Enroll</a></li>
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-lg-3">
+          <h3 class="footer-heading">Our Courses</h3>
+          <ul class="footer-links-list">
+            <li><a href="courses.html#basic-tailoring"><i class="bi bi-chevron-right small"></i> Basic Tailoring Course</a></li>
+            <li><a href="courses.html#advanced-tailoring"><i class="bi bi-chevron-right small"></i> Advanced Tailoring Course</a></li>
+            <li><a href="courses.html#blouse-stitching"><i class="bi bi-chevron-right small"></i> Blouse Stitching Course</a></li>
+            <li><a href="courses.html#chudidhar-stitching"><i class="bi bi-chevron-right small"></i> Chudidhar Stitching Course</a></li>
+            <li><a href="courses.html#aari-embroidery"><i class="bi bi-chevron-right small"></i> Aari Embroidery Course</a></li>
+            <li><a href="courses.html#pattern-making"><i class="bi bi-chevron-right small"></i> Pattern Making Course</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3">
+          <h3 class="footer-heading">Contact Information</h3>
+          <div class="footer-contact-item">
+            <i class="bi bi-geo-alt"></i>
+            <span>[Institute Address Placeholder: Street, Landmark, City &amp; PIN Code]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-telephone"></i>
+            <span>[Phone Placeholder: +91 XXXXX XXXXX]</span>
+          </div>
+          <div class="footer-contact-item">
+            <i class="bi bi-envelope"></i>
+            <span>[Email Placeholder: admissions@velora.example]</span>
+          </div>
+          <div class="footer-contact-item mb-3">
+            <i class="bi bi-clock"></i>
+            <span>[Working Hours Placeholder: Mon – Sat, Morning to Evening Sessions]</span>
+          </div>
+          <a href="contact.html#enrollment-form" class="btn-ttc-gold btn-sm-ttc w-100">
+            <i class="bi bi-journal-check"></i>
+            <span>Enroll in Next Batch</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom d-flex flex-column flex-md-row align-items-center justify-content-between gap-2">
+        <span>&copy; 2026 Velora. All Rights Reserved.</span>
+        <span>Crafted with precision for aspiring garment makers &amp; fashion creators.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Back to Top Button -->
+  <button type="button" class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle & Custom Main Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
